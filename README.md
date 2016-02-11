@@ -2,10 +2,9 @@
 IDS Toolbox
 
 
-testing smart git to pull and push changes
+Welcome,
 
-TESTING CHANGES FROM NOTEPAD. test tetetetetetetetetete
+The IDS-Toolbox will be a collection of resources available for anyone who has questions or concerns on how to complete certain tasks in our website. If you have any questions please contact one of the Developers.
 
-
-
-testing again d
+Thank You,
+IDS Developer Department
