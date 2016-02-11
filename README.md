@@ -4,8 +4,7 @@ IDS Toolbox
 ------------------------------------------------------------- 02/11/2016 -------------------------------------------------------------
 Welcome,
 
-The IDS-Toolbox will be a collection of resources available for anyone who has questions or concerns on how to complete certain tasks in our website. If you have any questions please contact one of the Developers.
-
+The IDS-Toolbox will be a collection of resources available for anyone who has questions or concerns on how to complete certain tasks in our website.
 
 Please go to our repository at GitHub:
 	URL: https://github.com/mvdesousa/IDS-Toolbox
