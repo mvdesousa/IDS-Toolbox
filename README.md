@@ -17,5 +17,4 @@ If you prefer to have a GUI for GitHub you may download;
 	
 After getting setup with GitHub and you downloaded one of the apps above, please clone the repository https://github.com/mvdesousa/IDS-Toolbox to a folder in your computer. It can be anywhere you want but please keep in mind that once you connect your repo to a specific folder in your desktop, you will not be able to change that path. If you move the folder elsewhere, GitHub will not know the association of that file. So please think about where you want to setup your repository and make sure to keep it that way while using GitHub on a project.
 
-Thank You,
-IDS Development Department
+Thank You
