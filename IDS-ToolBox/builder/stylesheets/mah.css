@@ -1,0 +1,245 @@
+body.home {
+  background: #000 url(//marriottasiaholidays.com/images/home_bg.jpg) no-repeat 50% 0;
+}
+
+.logo {
+  width: 195px;
+  height: 161px;
+  background: url(//marriottasiaholidays.com/images/logo.png) no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  top: -60px;
+  left: 4%;
+  z-index: 2000;
+  text-align: left;
+  font: 0/0 a;
+}
+.headerImage {
+	padding-top: 80px;
+}
+header {
+	height:161px;
+}
+.divider {
+  display: block;
+  clear: both;
+  height: 2px;
+  border: none;
+  background: #9c721d;
+  margin-bottom: 40px;
+}
+.feed-item:before {
+  width: 84%;
+  height: 4px;
+  content: '';
+  background: #9c721d;
+  position: absolute;
+  top: 1px;
+  left: 8%;
+  z-index: 1;
+}
+.feed-title {
+  text-align: center;
+  line-height: 1;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #9c712d;
+}
+
+.feed-title a:visited {
+  color: #9c712d;
+}
+.feed-title a {
+  color: #9c712d;
+}
+.feed-title a:visited {
+  color: #081a75;
+}
+.feed-item {
+  position: relative;
+  /* background: #f4f4f4; */
+  padding: 15px 0 0 0;
+}
+
+.feed-desc {
+  display: block;
+  margin: 0;
+  padding: 15px 15px 30px 15px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: .813em;
+  position: relative;
+  line-height: 1.5em;
+}
+.vert-margin {
+  margin-bottom: 20px;
+}
+footer nav, footer nav p {
+  text-align: center;
+}
+.footer-nav-item a:visited {
+  color: #636363;
+}
+.horizontal-ul li a {
+  display: block;
+}
+.footer-nav-item a {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  color: #636363;
+}
+.footer-nav-ul li {
+  font-size: .813em;
+  color: #636363;
+  background: none;
+}
+.horizontal-ul li {
+  display: inline-block;
+}
+.footer-nav-separator {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+ul li {
+  list-style-type: none;
+}
+.font-reset {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+footer p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #636363;
+  text-align: justify;
+  font-size: .813em;
+}
+.footer-highlight {
+  text-transform: uppercase;
+}
+footer {
+  text-align: center;
+  padding: 20px 20px 250px 20px;
+}
+
+div.feed-image .img-responsive	{
+	display: inherit;
+}
+
+.paddingright {
+	padding-right:40px;
+}
+.text-white {
+	color: #fff;
+}
+.fullWidthContent {
+	padding: 10px 0px;
+}
+.specials-description {
+  width: 100%;
+  /* max-width: 800px; */
+  padding: 20px;
+  box-shadow: inset 0 0 40px rgba(0,0,0,.7);
+  background: rgba(0,0,0,.7);
+  top: 8px;
+  z-index: 10;
+  font-size: 12px;
+  text-align: left;
+}
+.specials-description p, .specials-description li {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+  clear: left;
+}
+.padding100 {
+	padding:50px 0px 120px;
+}	
+.specials-title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  font-size: 2.5em;
+  color: #fff;
+  border-bottom: solid 2px #c1974c;
+  position: relative;
+}
+.specials-item {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6px;
+  text-align: center;
+}
+btn-brown {
+	background: #A98645;
+}
+.specials-down-arrow {
+  width: 56px;
+  height: 18px;
+  content: '';
+  background: #fff url(//marriottasiaholidays.com/images/specials-down-arrow.png) no-repeat 50% 75%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -28px;
+  z-index: 1000;
+}
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+			.container {
+  			width: 670px !important;
+			}
+			#htmlbuilder {
+  			/*margin-left: 40px !important;*/
+			}
+
+    }
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 868px) {
+			.container {
+  			width: 770px !important;
+			}
+			#htmlbuilder {
+  			/*margin-left: 60px !important;*/
+			}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 1092px) {
+			.container {
+  			width: 992px !important;
+			}
+			#htmlbuilder {
+  			/*margin-left: 100px !important;*/
+			}
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+			.container {
+  			width: 992px !important;
+			}
+			#htmlbuilder {
+  			/*margin-left: 120px !important;*/
+			}
+
+    }
+    
+    

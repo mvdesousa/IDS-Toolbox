@@ -1,0 +1,37 @@
+<?php
+
+
+$url='http://qm09.owners.marriottvacationclub.com/mvwc/goToLoanSummary';
+ 
+$data = array(
+    'CSRFToken' => urlencode('0c93048a-9fd3-4842-bdd9-b06578496d01'),
+		'address1' => urlencode('6649 Westwood Blvd'),
+		'address2' => urlencode('500'),
+		'city' => urlencode('Orlando'),
+		'country' => urlencode('US'),
+		'customerId' => urlencode('2072488'),
+		'email' => urlencode('john.doe@vacationclub.com'),
+		'firstName' => urlencode('John'),
+		'fromWebsite' => urlencode('MYVC'),
+		'lastName' => urlencode('Doe'),
+		'phoneNo' => urlencode('407-509-1000'),
+		'save' => '',
+		'state' => urlencode('FL'),
+		'userType' => urlencode('OWNER'),
+		'zipCode' => urlencode('32821')
+);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, true);
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+$output = curl_exec($ch);
+$info = curl_getinfo($ch);
+curl_close($ch);
+
+echo $output;
+
+echo "hello";
+?>

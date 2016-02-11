@@ -1,0 +1,135 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Bartlett, Brandon";RSVP=TRUE:mailto:Brandon.Bartlett@vacationc
+	lub.com
+ATTENDEE;CN="Break, Shayne";RSVP=TRUE:mailto:Shayne.Break@mvwc.com
+ATTENDEE;CN="Chandramouli, Ravi";RSVP=TRUE:mailto:Ravi.Chandramouli@mvwc.co
+	m
+ATTENDEE;CN="Edmonson, Jerry";RSVP=TRUE:mailto:Jerry.Edmonson@vacationclub.
+	com
+ATTENDEE;CN="Francis, Elizabeth";RSVP=TRUE:mailto:Liza.Francis@MVWC.com
+ATTENDEE;CN="Griffin, Travis";RSVP=TRUE:mailto:Travis.Griffin@mvwc.com
+ATTENDEE;CN="Maxwell, Julius ";RSVP=TRUE:mailto:Julius.Maxwell@mvwc.com
+ATTENDEE;CN="Mittleman, Todd";RSVP=TRUE:mailto:Todd.Mittleman@mvwc.com
+ATTENDEE;CN="Rivera, Rosi";RSVP=TRUE:mailto:Rosi.Rivera@mvwc.com
+ATTENDEE;CN="Schuman, Sandra";RSVP=TRUE:mailto:Sandra.Schuman@mvwc.com
+ATTENDEE;CN="Stein, Ian";RSVP=TRUE:mailto:Ian.Stein@mvwc.com
+ATTENDEE;CN="MVW Conf Room W3-5F";RSVP=TRUE:mailto:MVCICRW3-5F@vacationclub
+	.com
+CLASS:PUBLIC
+CREATED:20150501T144045Z
+DESCRIPTION:The purpose of these bi-weekly working sessions is to create th
+	e developer standards for the manual adjustments that will be necessary fo
+	r a successful migration to Hybris.  The goal of each session is to addres
+	s the activity and agree upon the standards for completing the task.  The 
+	sessions are as follows:\n\n*	Session 1: May 13\, 2015 3-4 p.m. – Kickof
+	f and Hybris Overview\n*	Session 2: May 27\, 2015 2-3 p.m. – Developer S
+	tandards for CSS Classes and CSS Components using Bootstrap 3.0\n*	Session
+	 3: June 10\, 2015 2-3 p.m. – Developer Standards for Hybris Web Content
+	 Management Module (WCMS)\n*	Session 4: June 24\, 2015 3-4 p.m. – Develo
+	per Standards for Hybris Management Console (hMC)\n*	Session 5: July 8\, 2
+	015 3-4 p.m. – Developer Standards for Product Cockpit Module (PCM)\n*	S
+	ession 6: July 22\, 2015 2-3 p.m. – Page Assignments and Wrap-up\n\nPlea
+	se find the high level sequence of tasks for the migration to Hybris at th
+	is link:  V:\\Web Marketing\\Web Redesign 2A Planning\\2A Planning\\Web Re
+	design 2A.1 Sequence of Tasks for Migration.vsd <\\\\ad.mvwcorp.com\\MCOVC
+	DFS\\Web Marketing\\Web Redesign 2A Planning\\2A Planning\\Web Redesign 2A
+	.1 Sequence of Tasks for Migration.vsd> \n\nLet me know if you have any qu
+	estions.\n\n\nThank you\,\n\nMarcia Nestor\nExt. 2844\n\n\n\n\n\n
+DTEND;TZID="Eastern Standard Time":20150513T160000
+DTSTAMP:20150422T151031Z
+DTSTART;TZID="Eastern Standard Time":20150513T150000
+LAST-MODIFIED:20150501T144045Z
+LOCATION:MVW Conf Room W3-5F 
+ORGANIZER;CN="Nestor, Marcia":mailto:Marcia.Nestor@vacationclub.com
+PRIORITY:5
+RECURRENCE-ID;TZID="Eastern Standard Time":20150513T150000
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Web Redesign 2A Planning Development and Implementat
+	ion
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000E00ECEE0E57CD001000000000000000
+	0100000004309FEB6100109408481D7C5417D2AB8
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 14.02.5004.000">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted f
+	rom text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calib
+	ri">The purpose of these bi-weekly working sessions is to create the devel
+	oper standards for the manual adjustments that will be necessary for a suc
+	cessful migration to Hybris.&nbsp\; The goal of each session is to address
+	 the activity and agree upon the standards for completing the task.&nbsp\;
+	 The sessions are as follows:</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="
+	en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&
+	nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN>
+	<SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"> <F
+	ONT FACE="Calibri">Session 1: May 13\, 2015 3-4 p.m. – Kickoff and Hybri
+	s Overview</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="
+	Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\
+	;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Sess
+	ion 2: May 27\, 2015 2-3 p.m. – Developer Standards for CSS Classes and 
+	CSS Components using Bootstrap 3.0</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN L
+	ANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
+	FONT FACE="Calibri">Session 3: June 10\, 2015 2-3 p.m. – Developer Stand
+	ards for Hybris Web Content Management Module (WCMS)</FONT></SPAN></P>\n\n
+	<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Couri
+	er New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SP
+	AN LANG="en-us"> <FONT FACE="Calibri">Session 4: June 24\, 2015 3-4 p.m. 
+	– Developer Standards for Hybris Management Console (hMC)</FONT></SPAN><
+	/P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE
+	="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></S
+	PAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Session 5: July 8\, 2015 3-4 
+	p.m. – Developer Standards for Product Cockpit Module (PCM)</FONT></SPAN
+	></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	/SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Session 6: July 22\, 2015 2
+	-3 p.m. – Page Assignments and Wrap-up</FONT></SPAN></P>\n\n<P DIR=LTR><
+	SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPA
+	N LANG="en-us"><FONT FACE="Calibri">Please find the high level sequence of
+	 tasks for the migration to Hybris at this link:&nbsp\;</FONT></SPAN><SPAN
+	 LANG="en-us"> </SPAN><A HREF="file://\\\\ad.mvwcorp.com\\MCOVCDFS\\Web Ma
+	rketing\\Web Redesign 2A Planning\\2A Planning\\Web Redesign 2A.1 Sequence
+	 of Tasks for Migration.vsd"><SPAN LANG="en-us"><U><FONT COLOR="#0000FF" F
+	ACE="Calibri">V:\\Web Marketing\\Web Redesign 2A Planning\\2A Planning\\We
+	b Redesign 2A.1 Sequence of Tasks for Migration.vsd</FONT></U></SPAN><SPAN
+	 LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPA
+	N LANG="en-us"><FONT FACE="Calibri">Let me know if you have any questions.
+	</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=
+	LTR><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">Than
+	k you\,</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Cal
+	ibri">Marcia Nestor</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FO
+	NT FACE="Calibri">Ext. 2844</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LT
+	R><SPAN LANG="en-us"></SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOSTARTCHECK:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

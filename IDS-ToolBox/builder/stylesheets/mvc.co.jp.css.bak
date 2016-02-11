@@ -1,0 +1,88 @@
+
+@media (min-width: 1200px)
+.container {
+  width: 970px !important;
+}
+
+#header01 {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 110px;
+  background: transparent url(//www.marriottvacationclub.co.jp/img/top_header_bg.jpg) left top;
+  no-repeat left bottom; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+#header03 {
+  width: 100%;
+  height: 18px;
+  background: transparent url(//www.marriottvacationclub.co.jp/img/top_bg1.gif) repeat-x left top;
+}
+.logo {
+  width: 195px;
+  height: 161px;
+  background: url(//www.marriottvacationclub.co.jp/img/top_header_logo.png) no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  top: -60px;
+  left: 4%;
+  z-index: 2000;
+  text-align: left;
+  font: 0/0 a;
+}
+
+#headR {
+  width: 603px;
+  float: right;
+  /* text-align: right; */
+  margin-top: 16px;
+}
+
+#headR ul {
+  background: transparent url(//www.marriottvacationclub.co.jp/img/top_gm_bg.jpg) left top;
+  list-style: none;
+  font-size: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+#headR li.gm {
+  display: inline;
+  padding-right: 10px;
+}
+#headR li.gmEnd {
+  display: inline;
+}
+
+.hdContBox {
+  float: right;
+  margin-top: 23px;
+}
+
+.hdContBox ul {
+  padding-right: 5px;
+  border-left: 1px #CCCCCC solid;
+}
+
+.hdContBox ul li {
+  float: left;
+  color: #FFF;
+  font-size: 12px;
+  padding: 0 10px 0 10px;
+  border-right: 1px #CCCCCC solid;
+  list-style-type: none;
+  margin: 0;
+}
+
+.hdContBox ul li a {
+  color: #FFF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

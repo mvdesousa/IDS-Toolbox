@@ -1,0 +1,41 @@
+<!-- jQuery 2.1.3 -->
+<script src="/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+
+<style>
+.video { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
+.video img { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; cursor: pointer; }
+
+.video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+ 
+/* image poster clicked, player class added using js */
+.video.player img { display: none; }
+.video.player:after { display: none; }
+</style>
+
+<div class="video">
+    <img src="http://www.marriottvacationclub.com/vacation-resorts/images/video/hero_placeholder.jpg">
+    <!-- <iframe width="940" height="529" src="http://www.youtube.com/embed/98lscvpR9qE?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+</div>
+
+<script>
+	
+$(function() { 
+    var videos  = $(".video");
+ 
+        videos.on("click", function(){
+            var elm = $(this),
+                conts   = elm.contents(),
+                le      = conts.length,
+                ifr     = null;
+ 
+            for(var i = 0; i<le; i++){
+              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+            }
+ 
+            elm.addClass("player").html(ifr);
+            elm.off("click");
+        });
+});
+	
+</script>
+													
