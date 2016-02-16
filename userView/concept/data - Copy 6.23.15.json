@@ -1,0 +1,524 @@
+{
+  "name": "MVC.com",
+  "hybrismigration": "20",
+  "children": [
+    {
+      "name": "Front",
+      "children": [
+        {
+          "name": "Website",
+          "template": "MAH.Container.3Column",
+          "url": "http://10.206.6.22:9001/yacceleratorstorefront/?site=mvc.com",
+          "hybrismigration": "20",
+          "comments": "This is a comment",
+          "developer": "Brandon Bartlett",
+          "children": [
+            {
+              "name": "Home",
+              "children": [
+                {
+                  "name": "Destinations Nav"
+                },
+                {
+                  "name": "Ownership Nav"
+                },
+                {
+                  "name": "Reservations Nav"
+                },
+                {
+                  "name": "Request Information Nav"
+                }
+              ],
+              "url": "http://10.206.6.22:9001/yacceleratorstorefront/?site=mvc.com"
+            },
+            {
+              "name": "Destinations"
+            },
+            {
+              "name": "Ownership"
+            },
+            {
+              "name": "Vacation Specials"
+            },
+            {
+              "name": "Vacation Planner"
+            },
+            {
+              "name": "Newsroom",
+              "children": [
+                {
+                  "name": "News"
+                },
+                {
+                  "name": "Press Releases"
+                }
+              ]
+            },
+            {
+              "name": "Videos",
+              "children": [
+                {
+                  "name": "Video Highlights"
+                },
+                {
+                  "name": "Owner Testimonials"
+                }
+              ]
+            },
+            {
+              "name": "Reservations",
+              "children": [
+                {
+                  "name": "iFrame Reservations"
+                }
+              ]
+            },
+            {
+              "name": "Contact",
+              "children": [
+                {
+                  "name": "Inquiry Forms"
+                },
+                {
+                  "name": "Comments"
+                }
+              ]
+            },
+            {
+              "name": "Search MVC"
+            }
+          ],
+          "breakpoint": {
+            "mobile": "480px",
+            "tablet": "768px",
+            "laptop": "992px",
+            "desktop": "1200px"
+          },
+          "technos": [
+            "hybris",
+            "jQuery",
+            "Bootstrap 3"
+          ]
+        },
+        {
+          "name": "Landing Pages",
+          "children": [
+            {
+              "name": "CMD"
+            },
+            {
+              "name": "CSD"
+            },
+            {
+              "name": "Email"
+            },
+            {
+              "name": "Friendshare"
+            },
+            {
+              "name": "Insider"
+            },
+            {
+              "name": "Opt-in"
+            },
+            {
+              "name": "PPC"
+            },
+            {
+              "name": "Resorts"
+            },
+            {
+              "name": "SE Video"
+            },
+            {
+              "name": "Voice of Customer"
+            },
+            {
+              "name": "Events"
+            },
+            {
+              "name": "Sweepstakes"
+            },
+            {
+              "name": "Surveys"
+            },
+            {
+              "name": "Facebook Landing"
+            }
+          ]
+        },
+        {
+          "name": "eBrochures",
+          "children": [
+            {
+              "name": "Featured Destinations"
+            }
+          ]
+        },
+        {
+          "name": "Resales",
+          "children": [
+            {
+              "name": "The Difference",
+              "children": [
+                {
+                  "name": "Hotels & Resorts"
+                },
+                {
+                  "name": "Benefits"
+                },
+                {
+                  "name": "View Inventory"
+                }
+              ]
+            },
+            {
+              "name": "Buy Weeks"
+            },
+            {
+              "name": "Sell Weeks",
+              "children": [
+                {
+                  "name": "Request Info"
+                }
+              ]
+            },
+            {
+              "name": "Reasons to Own"
+            },
+            {
+              "name": "Request Information"
+            }
+          ]
+        }
+      ],
+      "comments": "Includes all sub sites that do not require authentication.",
+      "developer": "Brandon Bartlett",
+      "breakpoint": {
+        "mobile": "480px",
+        "tablet": "769px",
+        "laptop": "993px",
+        "desktop": "1201px"
+      },
+      "template": "MAH.Container.3Column"
+    },
+    {
+      "name": "Login",
+      "hybrismigration": "50",
+      "children": [
+        {
+          "name": "Service",
+          "hybrismigration": "70",
+          "children": [
+            {
+              "name": "My Reservations"
+            },
+            {
+              "name": "Marriott Rewards"
+            },
+            {
+              "name": "Manage Maintenance Fees/Club Dues"
+            },
+            {
+              "name": "Loan Status"
+            },
+            {
+              "name": "Owners Association"
+            },
+            {
+              "name": "FriendShare"
+            },
+            {
+              "name": "Profile Updates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaaS",
+      "children": [
+        {
+          "name": "Twitter"
+        },
+        {
+          "name": "Facebook"
+        },
+        {
+          "name": "Google Adwords"
+        },
+        {
+          "name": "Google Analytics"
+        },
+        {
+          "name": "Adobe Target"
+        },
+        {
+          "name": "Olapic"
+        },
+        {
+          "name": "YouTube"
+        },
+        {
+          "name": "Foresee"
+        }
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {
+          "name": "Video API"
+        },
+        {
+          "name": "Form API"
+        },
+        {
+          "name": "Export API",
+          "children": [
+            {
+              "name": "RSS Export",
+              "children": []
+            },
+            {
+              "name": "Sitemap",
+              "children": [
+                {
+                  "name": "Sitemap Site"
+                },
+                {
+                  "name": "Sitemap News"
+                },
+                {
+                  "name": "Sitemap Videos"
+                },
+                {
+                  "name": "Sitemap Resorts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Search API"
+        },
+        {
+          "name": "Resort API"
+        },
+        {
+          "name": "Content API"
+        }
+      ]
+    },
+    {
+      "name": "hybris",
+      "hybrismigration": null,
+      "children": [
+        {
+          "name": "hMC",
+          "hybrismigration": null,
+          "children": [
+            {
+              "name": "Catalog",
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Components",
+              "hybrismigration": null
+            },
+            {
+              "name": "Multimedia",
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Localization",
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Base Commerce",
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Deeplink URLs",
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Content (WCMS)",
+              "children": [
+                {
+                  "name": "Websites",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Page Types",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Page Templates",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Content Slots",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Pages",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Components",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Navigation",
+                  "hybrismigration": "0"
+                }
+              ],
+              "hybrismigration": "0"
+            }
+          ]
+        },
+        {
+          "name": "WCMS",
+          "hybrismigration": null,
+          "children": [
+            {
+              "name": "Live Editor",
+              "children": [
+                {
+                  "name": "Staged",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Online",
+                  "hybrismigration": "0"
+                }
+              ],
+              "hybrismigration": "0"
+            },
+            {
+              "name": "Page Edit",
+              "hybrismigration": "0",
+              "children": []
+            },
+            {
+              "name": "Navigation Nodes",
+              "hybrismigration": "0"
+            }
+          ]
+        },
+        {
+          "name": "PCMS",
+          "hybrismigration": "0"
+        },
+        {
+          "name": "Customer Service Cockpit",
+          "hybrismigration": "0"
+        },
+        {
+          "name": "Admin Cockpit",
+          "hybrismigration": "0"
+        },
+        {
+          "name": "Backoffice",
+          "hybrismigration": "0",
+          "children": [
+            {
+              "name": "Multimedia",
+              "hybrismigration": "0",
+              "children": [
+                {
+                  "name": "Media",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Media Containers",
+                  "hybrismigration": "0"
+                },
+                {
+                  "name": "Media Folders",
+                  "hybrismigration": "0"
+                }
+              ]
+            },
+            {
+              "name": "Links",
+              "hybrismigration": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MVC Toolbox",
+      "children": [
+        {
+          "name": "HTML Builder",
+          "children": [
+            {
+              "name": "Templates",
+              "children": [
+                {
+                  "name": "Boxed Container"
+                },
+                {
+                  "name": "Fluid Container"
+                }
+              ]
+            },
+            {
+              "name": "Content Blocks",
+              "children": [
+                {
+                  "name": "Columns"
+                },
+                {
+                  "name": "Images"
+                },
+                {
+                  "name": "Videos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alfresco",
+      "children": [
+        {
+          "name": "Document Management System"
+        }
+      ]
+    },
+    {
+      "name": "SVN"
+    },
+    {
+      "name": "Environments",
+      "children": [
+        {
+          "name": "Localhost"
+        },
+        {
+          "name": "QM09"
+        },
+        {
+          "name": "Production"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "children": [
+        {
+          "name": "Oracle"
+        },
+        {
+          "name": "Universe"
+        }
+      ]
+    }
+  ]
+}

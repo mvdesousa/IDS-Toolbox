@@ -1,0 +1,821 @@
+{
+  "name": "MVC.com",
+  "satisfaction":0.9,
+  "children": [
+    {
+      "name": "Front",
+      "children": [
+        {
+          "name": "Website",
+          "url": "http://www.marriottvacationclub.com",
+          "children": [
+            {
+              "name": "Home",
+              "children": [
+                {
+                  "name": "Destinations Nav"
+                },
+                {
+                  "name": "Ownership Nav"
+                },
+                {
+                  "name": "Reservations Nav"
+                },
+                {
+                  "name": "Request Information Nav"
+                }
+              ],
+              "technos": [
+                "Dojo.js"
+              ]
+            },
+            {
+              "name": "Destinations"
+            },
+            {
+              "name": "Newsroom"
+            },
+            {
+              "name": "Videos",
+              "children": [
+                {
+                  "name": "Video Highlights",
+                  "technos": [
+                    "jQuery"
+                  ],
+                  "dependsOn": [
+                    "YouTube"
+                  ]
+                },
+                {
+                  "name": "Owner Testimonials"
+                }
+              ]
+            },
+            {
+              "name": "Reservations"
+            },
+            {
+              "name": "Contact",
+              "children": [
+                {
+                  "name": "Inquiry Forms"
+                },
+                {
+                  "name": "Comments"
+                }
+              ],
+              "technos": [
+                "Dojo.js"
+              ]
+            }
+          ],
+          "dependsOn": [
+            "Alfresco"
+          ]
+        },
+        {
+          "name": "Landing Pages",
+          "children": [
+            {
+              "name": "CMD"
+            },
+            {
+              "name": "CSD"
+            },
+            {
+              "name": "Email"
+            },
+            {
+              "name": "Friendshare"
+            },
+            {
+              "name": "Insider"
+            },
+            {
+              "name": "Opt-in"
+            },
+            {
+              "name": "PPC",
+              "dependsOn": [
+                "Google Adwords"
+              ]
+            },
+            {
+              "name": "Resorts"
+            },
+            {
+              "name": "SE Video",
+              "dependsOn": [
+                "YouTube"
+              ]
+            },
+            {
+              "name": "Voice of Customer"
+            },
+            {
+              "name": "Events"
+            },
+            {
+              "name": "Sweepstakes"
+            }
+          ]
+        },
+        {
+          "name": "eBrochures",
+          "children": [
+            {
+              "name": "Featured Destination"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "satisfaction": 0.7,
+      "children": [
+        {
+          "name": "Service",
+          "url": "http://www.marriottvacationclub.com/admin",
+          "children": [
+            {
+              "name": "My Reservations"
+            },
+            {
+              "name": "Marriott Rewards",
+              "satisfaction": 0.6,
+              "dependsOn": [
+                "hybris"
+              ]
+            },
+            {
+              "name": "Manage Maintenance Fees/Club Dues",
+              "satisfaction": 0.6,
+              "dependsOn": [
+                "hybris"
+              ]
+            },
+            {
+              "name": "Loan Status",
+              "satisfaction": 0.6,
+              "dependsOn": [
+                "hybris"
+              ]
+            },
+            {
+              "name": "Owners Association"
+            },
+            {
+              "name": "FriendShare"
+            },
+            {
+              "name": "Profile Updates"
+            }
+          ],
+          "dependsOn": [
+            "hybris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaaS",
+      "children": [
+        {
+          "name": "Twitter"
+        },
+        {
+          "name": "Facebook"
+        },
+        {
+          "name": "Google Adwords"
+        },
+        {
+          "name": "Google Analytics",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "Adobe Target"
+        },
+        {
+          "name": "Olapic",
+          "url": "https://www.olapic.com"
+        },
+        {
+          "name": "YouTube"
+        }
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {
+          "name": "Content API"
+        },
+        {
+          "name": "Resort API"
+        },
+        {
+          "name": "Search API"
+        },
+        {
+          "name": "Export API",
+          "children": [
+            {
+              "name": "Sitemap",
+              "children": [
+                {
+                  "name": "Sitemap Site"
+                },
+                {
+                  "name": "Sitemap News"
+                },
+                {
+                  "name": "Sitemap Videos"
+                },
+                {
+                  "name": "Sitemap Resorts"
+                }
+              ]
+            },
+            {
+              "name": "RSS Export"
+            }
+          ]
+        },
+        {
+          "name": "Form API"
+        },
+        {
+          "name": "Video API"
+        }
+      ]
+    },
+    {
+      "name": "hybris",
+      "satisfaction": 0,
+      "children": [
+        {
+          "name": "hMC",
+          "satisfaction": 0,
+          "children": [
+            {
+              "name": "Catalog",
+              "satisfaction": 0
+            },
+            {
+              "name": "Components",
+              "satisfaction": 0
+            },
+            {
+              "name": "Multimedia",
+              "satisfaction": 0,
+              "children": [
+                {
+                  "name": "Media",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Media Containers",
+                  "satisfaction": 0
+                }
+              ]
+            },
+            {
+              "name": "Internationalization",
+              "satisfaction": 0
+            },
+            {
+              "name": "Base Commerce",
+              "satisfaction": 0
+            },
+            {
+              "name": "Deeplink URLs",
+              "satisfaction": 0
+            },
+            {
+              "name": "Content",
+              "satisfaction": 0,
+              "children": [
+                {
+                  "name": "Websites",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Page Types",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Page Templates",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Content Slots",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Pages",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Components",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Navigation",
+                  "satisfaction": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PCMS",
+          "satisfaction": 0
+        },
+        {
+          "name": "WCMS",
+          "satisfaction": 0,
+          "children": [
+            {
+              "name": "Live Editor",
+              "satisfaction": 0,
+              "children": [
+                {
+                  "name": "Staged",
+                  "satisfaction": 0
+                },
+                {
+                  "name": "Online",
+                  "satisfaction": 0
+                }
+              ]
+            },
+            {
+              "name": "Responsive Live Editor",
+              "satisfaction": 2
+            }
+          ]
+        },
+        {
+          "name": "Customer Service Cockpit",
+          "satisfaction": 0
+        },
+        {
+          "name": "Admin Cockpit",
+          "satisfaction": 0
+        }
+      ],
+      "technos": [
+        "JAVA",
+        "SpringMVC",
+        "Tomcat"
+      ]
+    },
+    {
+      "name": "Alfresco",
+      "children": [
+        {
+          "name": "Document Management System"
+        }
+      ]
+    }
+  ]
+}           },
+            {
+              "name": "Profile Updates"
+            }
+          ],
+          "dependsOn": [
+            "hybris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaaS",
+      "children": [
+        {
+          "name": "Twitter"
+        },
+        {
+          "name": "Facebook"
+        },
+        {
+          "name": "Google Adwords"
+        },
+        {
+          "name": "Google Analytics",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "Adobe Target"
+        },
+        {
+          "name": "Olapic",
+          "url": "https://www.olapic.com"
+        },
+        {
+          "name": "YouTube"
+        }
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {
+          "name": "Content API"
+        },
+        {
+          "name": "Resort API"
+        },
+        {
+          "name": "Search API"
+        },
+        {
+          "name": "Export API",
+          "children": [
+            {
+              "name": "Sitemap",
+              "children": [
+                {
+                  "name": "Sitemap Site"
+                },
+                {
+                  "name": "Sitemap News"
+                },
+                {
+                  "name": "Sitemap Videos"
+                },
+                {
+                  "name": "Sitemap Resorts"
+                }
+              ]
+            },
+            {
+              "name": "RSS Export"
+            }
+          ]
+        },
+        {
+          "name": "Form API"
+        },
+        {
+          "name": "Video API"
+        }
+      ]
+    },
+    {
+      "name": "hybris",
+      "hybrismigration": 0,
+      "children": [
+        {
+          "name": "hMC",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Catalog",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Components",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Multimedia",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Media",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Media Containers",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Internationalization",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Base Commerce",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Deeplink URLs",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Content",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Websites",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Types",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Templates",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Content Slots",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Pages",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Components",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Navigation",
+                  "hybrismigration": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PCMS",
+          "hybrismigration": 0
+        },
+        {
+          "name": "WCMS",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Live Editor",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Staged",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Online",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Responsive Live Editor",
+              "hybrismigration": 2
+            }
+          ]
+        },
+        {
+          "name": "Customer Service Cockpit",
+          "hybrismigration": 0
+        },
+        {
+          "name": "Admin Cockpit",
+          "hybrismigration": 0
+        }
+      ],
+      "technos": [
+        "JAVA",
+        "SpringMVC",
+        "Tomcat"
+      ]
+    },
+    {
+      "name": "Alfresco",
+      "children": [
+        {
+          "name": "Document Management System"
+        }
+      ]
+    }
+  ] },
+            {
+              "name": "FriendShare"
+            },
+            {
+              "name": "Profile Updates"
+            }
+          ],
+          "dependsOn": [
+            "hybris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaaS",
+      "children": [
+        {
+          "name": "Twitter"
+        },
+        {
+          "name": "Facebook"
+        },
+        {
+          "name": "Google Adwords"
+        },
+        {
+          "name": "Google Analytics",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "Adobe Target"
+        },
+        {
+          "name": "Olapic",
+          "url": "https://www.olapic.com"
+        },
+        {
+          "name": "YouTube"
+        }
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {
+          "name": "Content API"
+        },
+        {
+          "name": "Resort API"
+        },
+        {
+          "name": "Search API"
+        },
+        {
+          "name": "Export API",
+          "children": [
+            {
+              "name": "Sitemap",
+              "children": [
+                {
+                  "name": "Sitemap Site"
+                },
+                {
+                  "name": "Sitemap News"
+                },
+                {
+                  "name": "Sitemap Videos"
+                },
+                {
+                  "name": "Sitemap Resorts"
+                }
+              ]
+            },
+            {
+              "name": "RSS Export"
+            }
+          ]
+        },
+        {
+          "name": "Form API"
+        },
+        {
+          "name": "Video API"
+        }
+      ]
+    },
+    {
+      "name": "hybris",
+      "hybrismigration": 0,
+      "children": [
+        {
+          "name": "hMC",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Catalog",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Components",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Multimedia",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Media",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Media Containers",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Internationalization",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Base Commerce",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Deeplink URLs",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Content",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Websites",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Types",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Templates",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Content Slots",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Pages",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Components",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Navigation",
+                  "hybrismigration": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PCMS",
+          "hybrismigration": 0
+        },
+        {
+          "name": "WCMS",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Live Editor",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Staged",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Online",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Responsive Live Editor",
+              "hybrismigration": 2
+            }
+          ]
+        },
+        {
+          "name": "Customer Service Cockpit",
+          "hybrismigration": 0
+        },
+        {
+          "name": "Admin Cockpit",
+          "hybrismigration": 0
+        }
+      ],
+      "technos": [
+        "JAVA",
+        "SpringMVC",
+        "Tomcat"
+      ]
+    },
+    {
+      "name": "Alfresco",
+      "children": [
+        {
+          "name": "Document Management System"
+        }
+      ]
+    }
+  ]
+}

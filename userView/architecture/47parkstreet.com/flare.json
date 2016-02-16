@@ -1,0 +1,70 @@
+{
+ "name": "MVC Home",
+ "children": [
+  {
+   "name": "login",
+   "children": [
+    {
+     "name": "owners",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "graph",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "optimization",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Destinations",
+   "children": [
+    {
+     "name": "Overview",
+     "children": [
+      {"name": "Request Information", "size": 3938},
+      {"name": "Costa Rica", "size": 3812},
+      {"name": "Orlando", "size": 6714},
+      {"name": "Hawaii", "size": 1},
+      {"name": "Europe", "size": 1},
+      {"name": "Hilton Head Island", "size": 1},
+      {"name": "Caribbean", "size": 1},
+      {"name": "California", "size": 1},
+      {"name": "Las Vegas", "size": 1}
+     ]
+    },
+    {
+     "name": "Marriott Vacation Club Collection",
+     "children": [
+      {"name": "Europe", "size": 1},
+      {"name": "Hilton Head Island", "size": 1},
+      {"name": "Caribbean", "size": 1},
+      {"name": "ShortestPaths", "size": 1},
+      {"name": "SpanningTree", "size": 1}
+     ]
+    },
+    {
+     "name": "Marriott Vacation",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 1}
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+
+[
+{"name":"site.cluster.home.MarriottVacationClub-HomePage","url":"http://www.marriottvacationclub.com","size":1,"imports":
+	[
+	"site.cluster.home.Destinations",
+	"site.cluster.home.Ownership",
+	"site.cluster.home.reservations",
+	"site.cluster.home.requestInformation",
+	"site.cluster.footer.companyinfo",
+	"site.cluster.footer.newsroom",
+	"site.cluster.footer.careers",
+	"site.cluster.footer.sweepstakes",
+	"site.cluster.footer.Book-Modify-Reservation",
+	"site.cluster.footer.Contact-Us"
+	]
+},
+{"name":"site.cluster.footer.careers","size":1,"imports":[]},
+{"name":"site.cluster.footer.sweepstakes","size":1,"imports":[]},
+{"name":"site.cluster.footer.Book-Modify-Reservation","size":1,"imports":[]},
+{"name":"site.cluster.footer.Contact-Us","size":1,"imports":[]},
+{"name":"site.cluster.home.Destinations","size":1,"imports":
+	[
+		"site.cluster.home1.destinations.Overview",
+		"site.cluster.home1.destinations.MarriottVacationClubCollection",
+		"site.cluster.home1.destinations.MarriottCollection",
+		"site.cluster.home1.destinations.ExplorerCollection",
+		"site.cluster.home1.destinations.WorldTravelerCollection",
+		"site.cluster.home1.destinations.VideoHighlights"
+		]
+},
+
+{"name":"site.cluster.home1.destinations.Overview","size":1,"imports":[]},
+{"name":"site.cluster.home1.destinations.MarriottVacationClubCollection","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Grand-Residence-Club-Tahoe","site.vacation-resorts.marriott-aruba-ocean-club.Marriott-Aruba-Ocean-Club","site.vacation-resorts.marriott-aruba-surf-club","site.vacation-resorts.marriott-barony-beach-club","site.vacation-resorts.marriott-beachplace-towers","site.vacation-resorts.marriott-canyon-villas","site.vacation-resorts.marriott-club-son-antem","site.vacation-resorts.marriott-crystal-shores","site.vacation-resorts.marriott-custom-house","site.vacation-resorts.marriott-cypress-harbour","site.vacation-resorts.marriott-desert-springs","site.vacation-resorts.marriott-desert-springs-villas","site.vacation-resorts.marriott-desert-springs-villas-ii","site.vacation-resorts.marriott-empire-place-resort","site.vacation-resorts.marriott-fairway-villas","site.vacation-resorts.marriott-frenchman-cove","site.vacation-resorts.marriott-frenchmans-cove","site.vacation-resorts.marriott-grand-chateau","site.vacation-resorts.marriott-grande-ocean","site.vacation-resorts.marriott-grande-vista","site.vacation-resorts.marriott-harbour-club","site.vacation-resorts.marriott-harbour-lake","site.vacation-resorts.marriott-harbour-point","site.vacation-resorts.marriott-heritage-club","site.vacation-resorts.marriott-horizons-branson","site.vacation-resorts.marriott-imperial-palms","site.vacation-resorts.marriott-kauai-beach-club","site.vacation-resorts.marriott-kauai-lagoons","site.vacation-resorts.marriott-ko-olina-beach","site.vacation-resorts.marriott-ko-olina-beach-club","site.vacation-resorts.marriott-lakeshore-reserve","site.vacation-resorts.marriott-legends-edge","site.vacation-resorts.marriott-mai-khao-beach","site.vacation-resorts.marriott-manor-club","site.vacation-resorts.marriott-marbella-beach-club","site.vacation-resorts.marriott-maui-ocean-club","site.vacation-resorts.marriott-monarch","site.vacation-resorts.marriott-mountain-valley-lodge","site.vacation-resorts.marriott-mountainside","site.vacation-resorts.marriott-newport-coast","site.vacation-resorts.marriott-newport-coast-villas","site.vacation-resorts.marriott-ocean-pointe","site.vacation-resorts.marriott-oceana-palms","site.vacation-resorts.marriott-oceanwatch","site.vacation-resorts.marriott-oceanwatch-villas","site.vacation-resorts.marriott-phuket-beach-club","site.vacation-resorts.marriott-playa-andaluza","site.vacation-resorts.marriott-royal-palms","site.vacation-resorts.marriott-sabal-palms","site.vacation-resorts.marriott-shadow-ridge","site.vacation-resorts.marriott-st-kitts-beach-club","site.vacation-resorts.marriott-stkitts-beach-club","site.vacation-resorts.marriott-stream-side","site.vacation-resorts.marriott-streamside","site.vacation-resorts.marriott-summit-watch","site.vacation-resorts.marriott-sunset-pointe","site.vacation-resorts.marriott-surf-watch","site.vacation-resorts.marriott-timber-lodge","site.vacation-resorts.marriott-village-dile-de-france","site.vacation-resorts.marriott-village-dlle-de-france","site.vacation-resorts.marriott-villas-at-doral","site.vacation-resorts.marriott-waiohai-beach-club","site.vacation-resorts.marriott-willow-ridge","site.vacation-resorts.marriott-willow-ridge-lodge"
+]},
+{"name":"site.cluster.home1.destinations.MarriottCollection","size":1,"imports":[]},
+{"name":"site.cluster.home1.destinations.ExplorerCollection","size":1,"imports":["site.cluster.home.requestInformation"]},
+{"name":"site.cluster.home1.destinations.WorldTravelerCollection","size":1,"imports":[]},
+{"name":"site.cluster.home1.destinations.VideoHighlights","size":1,"imports":[]}
+
+,
+{"name":"site.cluster.home.Ownership","size":1,"imports":
+	[
+		"site.cluster.home2.ownership.WhyTimeshare",
+		"site.cluster.home2.ownership.WhyChooseMarriottVacationClub",
+		"site.cluster.home2.ownership.WhatOurOwnersSay",
+		"site.cluster.home2.ownership.HowVacationClubPointsWork",
+		"site.cluster.home2.ownership.WhereYouCanGo",
+		"site.cluster.home2.ownership.PricingInformation",
+		"site.cluster.home2.ownership.HowToBecomeAnOwner"
+		]
+},
+
+{"name":"site.cluster.home2.ownership.WhyTimeshare","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.WhyChooseMarriottVacationClub","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.WhatOurOwnersSay","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.HowVacationClubPointsWork","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.WhereYouCanGo","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.PricingInformation","size":1,"imports":[]},
+{"name":"site.cluster.home2.ownership.HowToBecomeAnOwner","size":1,"imports":[]}
+,
+{"name":"site.cluster.home.reservations","size":1,"imports":
+	[
+		"site.cluster.reservations1"
+		]
+},
+
+{"name":"site.cluster.reservations1","size":1,"imports":[]}
+,
+{"name":"site.cluster.home.requestInformation","size":1,"imports":
+	[
+		"requestInfo1"
+		]
+},
+
+{"name":"requestInfo1","size":1,"imports":[]},
+
+{"name":"site.cluster.footer.companyinfo","size":1,"imports":
+	[
+		"companylink1",
+		"companylink2",
+		"companylink3"
+		]
+},
+
+{"name":"companylink1","size":1,"imports":[]},
+{"name":"companylink2","size":1,"imports":[]},
+{"name":"companylink3","size":1,"imports":[]}
+,
+{"name":"site.cluster.footer.newsroom","size":1,"imports":
+	[
+		"newsroomlink1",
+		"newsroomlink2",
+		"newsroomlink3"
+		]
+},
+
+{"name":"newsroomlink1","size":1,"imports":["newsroomlink1","newsroomlink2","newsroomlink3"]},
+{"name":"newsroomlink2","size":1,"imports":["site.vacation-resorts.marriott-aruba-surf-club","site.vacation-resorts.marriott-aruba-surf-club"]},
+{"name":"newsroomlink3","size":1,"imports":[]},
+
+
+{"name":"site.vacation-resorts.grand-residence-club-tahoe.Grand-Residence-Club-Tahoe","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Villas-and-Amenities","site.vacation-resorts.grand-residence-club-tahoe.Resort-Overview","site.vacation-resorts.grand-residence-club-tahoe.Local-Activities","site.vacation-resorts.grand-residence-club-tahoe.Maps-and-Transportation"]},
+{"name":"site.vacation-resorts.grand-residence-club-tahoe.Villas-and-Amenities","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Maps-and-Transportation","site.vacation-resorts.grand-residence-club-tahoe.Local-Activities","site.vacation-resorts.grand-residence-club-tahoe.Resort-Overview"]},
+{"name":"site.vacation-resorts.grand-residence-club-tahoe.Resort-Overview","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Maps-and-Transportation","site.vacation-resorts.grand-residence-club-tahoe.Local-Activities","site.vacation-resorts.grand-residence-club-tahoe.Villas-and-Amenities"]},
+{"name":"site.vacation-resorts.grand-residence-club-tahoe.Local-Activities","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Maps-and-Transportation","site.vacation-resorts.grand-residence-club-tahoe.Resort-Overview","site.vacation-resorts.grand-residence-club-tahoe.Villas-and-Amenities"]},
+{"name":"site.vacation-resorts.grand-residence-club-tahoe.Maps-and-Transportation","size":1,"imports":["site.vacation-resorts.grand-residence-club-tahoe.Local-Activities","site.vacation-resorts.grand-residence-club-tahoe.Resort-Overview","site.vacation-resorts.grand-residence-club-tahoe.Villas-and-Amenities"]},
+
+{"name":"site.vacation-resorts.marriott-aruba-ocean-club.Marriott-Aruba-Ocean-Club","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Villas-and-Amenities","site.vacation-resorts.marriott-aruba-ocean-club.Resort-Overview","site.vacation-resorts.marriott-aruba-ocean-club.Local-Activities","site.vacation-resorts.marriott-aruba-ocean-club.Maps-and-Transportation"]},
+{"name":"site.vacation-resorts.marriott-aruba-ocean-club.Villas-and-Amenities","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Maps-and-Transportation","site.vacation-resorts.marriott-aruba-ocean-club.Local-Activities","site.vacation-resorts.marriott-aruba-ocean-club.Resort-Overview"]},
+{"name":"site.vacation-resorts.marriott-aruba-ocean-club.Resort-Overview","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Maps-and-Transportation","site.vacation-resorts.marriott-aruba-ocean-club.Local-Activities","site.vacation-resorts.marriott-aruba-ocean-club.Villas-and-Amenities"]},
+{"name":"site.vacation-resorts.marriott-aruba-ocean-club.Local-Activities","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Maps-and-Transportation","site.vacation-resorts.marriott-aruba-ocean-club.Resort-Overview","site.vacation-resorts.marriott-aruba-ocean-club.Villas-and-Amenities"]},
+{"name":"site.vacation-resorts.marriott-aruba-ocean-club.Maps-and-Transportation","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Local-Activities","site.vacation-resorts.marriott-aruba-ocean-club.Resort-Overview","site.vacation-resorts.marriott-aruba-ocean-club.Villas-and-Amenities"]},
+
+{"name":"site.vacation-resorts.marriott-aruba-surf-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-barony-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-beachplace-towers","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-canyon-villas","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-club-son-antem","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-crystal-shores","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-custom-house","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-cypress-harbour","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-desert-springs","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-desert-springs-villas","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-desert-springs-villas-ii","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-empire-place-resort","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-fairway-villas","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-frenchman-cove","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-frenchmans-cove","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-grand-chateau","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-grande-ocean","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-grande-vista","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-harbour-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-harbour-lake","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-harbour-point","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-heritage-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-horizons-branson","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-imperial-palms","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-kauai-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-kauai-lagoons","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-ko-olina-beach","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-ko-olina-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-lakeshore-reserve","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-legends-edge","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-mai-khao-beach","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-manor-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-marbella-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-maui-ocean-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-monarch","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-mountain-valley-lodge","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-mountainside","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-newport-coast","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-newport-coast-villas","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-ocean-pointe","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-oceana-palms","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-oceanwatch","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-oceanwatch-villas","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-phuket-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-playa-andaluza","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-royal-palms","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-sabal-palms","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-shadow-ridge","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-st-kitts-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-stkitts-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-stream-side","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-streamside","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-summit-watch","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-sunset-pointe","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-surf-watch","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-timber-lodge","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-village-dile-de-france","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-village-dlle-de-france","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-villas-at-doral","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-waiohai-beach-club","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-willow-ridge","size":1,"imports":[]},
+{"name":"site.vacation-resorts.marriott-willow-ridge-lodge","size":1,"imports":[]},
+
+
+{"name":"site.eBrochures-marriott-aruba-ocean-club","size":1,"imports":["site.vacation-resorts.marriott-aruba-ocean-club.Marriott-Aruba-Ocean-Club"]},
+{"name":"site.eBrochures-marriott-aruba-surf-club","size":1,"imports":["site.vacation-resorts.marriott-aruba-surf-club"]},
+{"name":"site.eBrochures-marriott-barony-beach-club","size":1,"imports":["site.vacation-resorts.marriott-barony-beach-club"]},
+{"name":"site.eBrochures-marriott-beachplace-towers","size":1,"imports":["site.vacation-resorts.marriott-beachplace-towers"]},
+{"name":"site.eBrochures-marriott-canyon-villas","size":1,"imports":["site.vacation-resorts.marriott-canyon-villas"]},
+{"name":"site.eBrochures-marriott-club-son-antem","size":1,"imports":["site.vacation-resorts.marriott-club-son-antem"]},
+{"name":"site.eBrochures-marriott-crystal-shores","size":1,"imports":["site.vacation-resorts.marriott-crystal-shores"]},
+{"name":"site.eBrochures-marriott-custom-house","size":1,"imports":["site.vacation-resorts.marriott-custom-house"]},
+{"name":"site.eBrochures-marriott-cypress-harbour","size":1,"imports":["site.vacation-resorts.marriott-cypress-harbour"]},
+{"name":"site.eBrochures-marriott-desert-springs","size":1,"imports":["site.vacation-resorts.marriott-desert-springs"]},
+{"name":"site.eBrochures-marriott-desert-springs-villas","size":1,"imports":["site.vacation-resorts.marriott-desert-springs-villas"]},
+{"name":"site.eBrochures-marriott-desert-springs-villas-ii","size":1,"imports":["site.vacation-resorts.marriott-desert-springs-villas-ii"]},
+{"name":"site.eBrochures-marriott-fairway-villas","size":1,"imports":["site.vacation-resorts.marriott-fairway-villas"]},
+{"name":"site.eBrochures-marriott-frenchmans-cove","size":1,"imports":["site.vacation-resorts.marriott-frenchmans-cove"]},
+{"name":"site.eBrochures-marriott-grand-chateau","size":1,"imports":["site.vacation-resorts.marriott-grand-chateau"]},
+{"name":"site.eBrochures-marriott-grande-ocean","size":1,"imports":["site.vacation-resorts.marriott-grande-ocean"]},
+{"name":"site.eBrochures-marriott-grande-vista","size":1,"imports":["site.vacation-resorts.marriott-grande-vista"]},
+{"name":"site.eBrochures-marriott-harbour-club","size":1,"imports":["site.vacation-resorts.marriott-harbour-club"]},
+{"name":"site.eBrochures-marriott-harbour-lake","size":1,"imports":["site.vacation-resorts.marriott-harbour-lake"]},
+{"name":"site.eBrochures-marriott-harbour-point","size":1,"imports":["site.vacation-resorts.marriott-harbour-point"]},
+{"name":"site.eBrochures-marriott-heritage-club","size":1,"imports":["site.vacation-resorts.marriott-heritage-club"]},
+{"name":"site.eBrochures-marriott-imperial-palms","size":1,"imports":["site.vacation-resorts.marriott-imperial-palms"]},
+{"name":"site.eBrochures-marriott-kauai-beach-club","size":1,"imports":["site.vacation-resorts.marriott-kauai-beach-club"]},
+{"name":"site.eBrochures-marriott-kauai-lagoons","size":1,"imports":["site.vacation-resorts.marriott-kauai-lagoons"]},
+{"name":"site.eBrochures-marriott-ko-olina-beach-club","size":1,"imports":["site.vacation-resorts.marriott-ko-olina-beach-club"]},
+{"name":"site.eBrochures-marriott-lakeshore-reserve","size":1,"imports":["site.vacation-resorts.marriott-lakeshore-reserve"]},
+{"name":"site.eBrochures-marriott-legends-edge","size":1,"imports":["site.vacation-resorts.marriott-legends-edge"]},
+{"name":"site.eBrochures-marriott-manor-club","size":1,"imports":["site.vacation-resorts.marriott-manor-club"]},
+{"name":"site.eBrochures-marriott-marbella-beach-club","size":1,"imports":["site.vacation-resorts.marriott-marbella-beach-club"]},
+{"name":"site.eBrochures-marriott-maui-ocean-club","size":1,"imports":["site.vacation-resorts.marriott-maui-ocean-club"]},
+{"name":"site.eBrochures-marriott-monarch","size":1,"imports":["site.vacation-resorts.marriott-monarch"]},
+{"name":"site.eBrochures-marriott-mountainside","size":1,"imports":["site.vacation-resorts.marriott-mountainside"]},
+{"name":"site.eBrochures-marriott-mountain-valley-lodge","size":1,"imports":["site.vacation-resorts.marriott-mountain-valley-lodge"]},
+{"name":"site.eBrochures-marriott-newport-coast","size":1,"imports":["site.vacation-resorts.marriott-newport-coast"]},
+{"name":"site.eBrochures-marriott-oceana-palms","size":1,"imports":["site.vacation-resorts.marriott-oceana-palms"]},
+{"name":"site.eBrochures-marriott-ocean-pointe","size":1,"imports":["site.vacation-resorts.marriott-ocean-pointe"]},
+{"name":"site.eBrochures-marriott-oceanwatch","size":1,"imports":["site.vacation-resorts.marriott-oceanwatch"]},
+{"name":"site.eBrochures-marriott-oceanwatch-villas","size":1,"imports":["site.vacation-resorts.marriott-oceanwatch-villas"]},
+{"name":"site.eBrochures-marriott-phuket-beach-club","size":1,"imports":["site.vacation-resorts.marriott-phuket-beach-club"]},
+{"name":"site.eBrochures-marriott-playa-andaluza","size":1,"imports":["site.vacation-resorts.marriott-playa-andaluza"]},
+{"name":"site.eBrochures-marriott-royal-palms","size":1,"imports":["site.vacation-resorts.marriott-royal-palms"]},
+{"name":"site.eBrochures-marriott-sabal-palms","size":1,"imports":["site.vacation-resorts.marriott-sabal-palms"]},
+{"name":"site.eBrochures-marriott-shadow-ridge","size":1,"imports":["site.vacation-resorts.marriott-shadow-ridge"]},
+{"name":"site.eBrochures-marriott-stkitts-beach-club","size":1,"imports":["site.vacation-resorts.marriott-stkitts-beach-club"]},
+{"name":"site.eBrochures-marriott-streamside","size":1,"imports":["site.vacation-resorts.marriott-streamside"]},
+{"name":"site.eBrochures-marriott-summit-watch","size":1,"imports":["site.vacation-resorts.marriott-summit-watch"]},
+{"name":"site.eBrochures-marriott-sunset-pointe","size":1,"imports":["site.vacation-resorts.marriott-sunset-pointe"]},
+{"name":"site.eBrochures-marriott-surf-watch","size":1,"imports":["site.vacation-resorts.marriott-surf-watch"]},
+{"name":"site.eBrochures-marriott-timber-lodge","size":1,"imports":["site.vacation-resorts.marriott-timber-lodge"]},
+{"name":"site.eBrochures-marriott-village-dile-de-france","size":1,"imports":["site.vacation-resorts.marriott-village-dile-de-france"]},
+{"name":"site.eBrochures-marriott-villas-at-doral","size":1,"imports":["site.vacation-resorts.marriott-villas-at-doral"]},
+{"name":"site.eBrochures-marriott-waiohai-beach-club","size":1,"imports":["site.vacation-resorts.marriott-waiohai-beach-club"]},
+{"name":"site.eBrochures-marriott-willow-ridge-lodge","size":1,"imports":["site.vacation-resorts.marriott-willow-ridge-lodge"]}
+
+
+]

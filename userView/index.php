@@ -5,32 +5,32 @@
     <title>Marriott Vacation Club Web Dev | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <link  href="/IDS-Toolbox/userView/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
     <!-- FontAwesome 4.3.0 -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons 2.0.0 -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
     <!-- Theme style -->
-    <link href="/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
-    <link href="/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
     <!-- Morris chart -->
-    <link href="/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/morris/morris.css" rel="stylesheet" type="text/css" />
     <!-- jvectormap -->
-    <link href="/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Date Picker -->
-    <link href="/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
     <!-- Daterange picker -->
-    <link href="/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
     <!-- bootstrap wysihtml5 - text editor -->
-    <link href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    <link  href="/IDS-Toolbox/userView//plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
 
     <!-- fullCalendar 2.2.5-->
-    <link href="/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-    <link href="/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print' />
+    <link  href="/IDS-Toolbox/userView//plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link  href="/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print' />
     
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -100,7 +100,7 @@
           	      <div class="box-body">
           	        <div class="row">  					 
           	  					<div class="embed-responsive embed-responsive-16by9">
-  												<iframe class="embed-responsive-item" src="concept/index2.html"></iframe>
+  												<iframe class="embed-responsive-item" src="/IDS-Toolbox/userView/concept/index2.html"></iframe>
   											</div>
   									</div>
   								</div>
@@ -130,7 +130,7 @@
           	        	</script>
           	        	<div id="IEMessage"></div>
           	  					<div class="embed-responsive embed-responsive-4by3">
-  												<iframe class="embed-responsive-item" src="architecture/mvc.com/index.html"></iframe>
+  												<iframe class="embed-responsive-item" src="/IDS-Toolbox/userView/architecture/mvc.com/index.html"></iframe>
   											</div>
   									</div>
   								</div>
@@ -174,7 +174,7 @@
                           <div class="progress-bar progress-bar-white-striped" style="width: 30%"></div>
                         </div>
                   <span class="progress-description">
-                    <a style="color:#fff;" href="/pages/migrationplan-2a.1-mvc.com.php">Migration Plan <i class="fa fa-arrow-circle-right"></i></a>
+                    <a style="color:#fff;"  href="/IDS-Toolbox/userView/pages/migrationplan-2a.1-mvc.com.php">Migration Plan <i class="fa fa-arrow-circle-right"></i></a>
                   </span>
                   
                 </div><!-- /.info-box-content -->

@@ -1,0 +1,580 @@
+{
+  "name": "MVC.com",
+  "hybrismigration": 0.9,
+  "children": [
+    {
+      "name": "Front",
+      "children": [
+        {
+          "name": "Website",
+          "url": "http://www.marriottvacationclub.com",
+          "children": [
+            {
+              "name": "Home",
+              "children": [
+                {
+                  "name": "Destinations Nav"
+                },
+                {
+                  "name": "Ownership Nav"
+                },
+                {
+                  "name": "Reservations Nav"
+                },
+                {
+                  "name": "Request Information Nav"
+                }
+              ]
+            },
+            {
+              "name": "Destinations"
+            },
+            {
+              "name": "Ownership"
+            },
+            {
+              "name": "Vacation Specials"
+            },
+            {
+              "name": "Vacation Planner"
+            },
+            {
+              "name": "Newsroom",
+              "children": [
+                {
+                  "name": "News"
+                },
+                {
+                  "name": "Press Releases"
+                }
+              ]
+            },
+            {
+              "name": "Videos",
+              "children": [
+                {
+                  "name": "Video Highlights",
+                  "dependsOn": [
+                    "YouTube"
+                  ],
+                  "technos": [
+                    "JavaScript",
+                    "iframe"
+                  ]
+                },
+                {
+                  "name": "Owner Testimonials",
+                  "technos": [
+                    "iframe"
+                  ],
+                  "dependsOn": [
+                    "YouTube"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Reservations",
+              "children": [
+                {
+                  "name": "iFrame Reservations",
+                  "url": "https://reservations.marriottvacationclub.com/mvci/reservation/rateListMenu.mi",
+                  "children": [],
+                  "dependsOn": [
+                    "Resort API"
+                  ],
+                  "technos": [
+                    "iframe",
+                    "HTTP GET"
+                  ],
+                  "host": {
+                    "Marriott.com": []
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Contact",
+              "children": [
+                {
+                  "name": "Inquiry Forms"
+                },
+                {
+                  "name": "Comments"
+                }
+              ],
+              "dependsOn": [
+                "Form API"
+              ],
+              "technos": [
+                "Dojo.js"
+              ]
+            },
+            {
+              "name": "Search MVC",
+              "dependsOn": [
+                "Search API"
+              ]
+            }
+          ],
+          "dependsOn": [
+            "Alfresco"
+          ],
+          "technos": [
+            "Dojo.js"
+          ],
+          "host": {
+            "MVWC": []
+          }
+        },
+        {
+          "name": "Landing Pages",
+          "children": [
+            {
+              "name": "CMD"
+            },
+            {
+              "name": "CSD"
+            },
+            {
+              "name": "Email"
+            },
+            {
+              "name": "Friendshare"
+            },
+            {
+              "name": "Insider"
+            },
+            {
+              "name": "Opt-in"
+            },
+            {
+              "name": "PPC",
+              "dependsOn": [
+                "Google Adwords"
+              ]
+            },
+            {
+              "name": "Resorts"
+            },
+            {
+              "name": "SE Video",
+              "dependsOn": [
+                "YouTube"
+              ],
+              "technos": [
+                "iframe"
+              ]
+            },
+            {
+              "name": "Voice of Customer"
+            },
+            {
+              "name": "Events"
+            },
+            {
+              "name": "Sweepstakes"
+            },
+            {
+              "name": "Surveys"
+            },
+            {
+              "name": "Facebook Landing"
+            }
+          ],
+          "dependsOn": [
+            "Alfresco"
+          ],
+          "host": {
+            "MVWC": []
+          }
+        },
+        {
+          "name": "eBrochures",
+          "children": [
+            {
+              "name": "Featured Destinations"
+            }
+          ],
+          "dependsOn": [
+            "Alfresco"
+          ],
+          "host": {
+            "MVWC": []
+          }
+        },
+        {
+          "name": "Resales",
+          "children": [
+            {
+              "name": "The Difference",
+              "children": [
+                {
+                  "name": "Hotels & Resorts"
+                },
+                {
+                  "name": "Benefits"
+                },
+                {
+                  "name": "View Inventory",
+                  "dependsOn": [
+                    "eBrochures"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Buy Weeks"
+            },
+            {
+              "name": "Sell Weeks",
+              "children": [
+                {
+                  "name": "Request Info"
+                }
+              ]
+            },
+            {
+              "name": "Reasons to Own",
+              "url": "https://www.marriottvacationclub.com/resales/reasons-to-own.shtml",
+              "technos": [],
+              "dependsOn": []
+            },
+            {
+              "name": "Request Information",
+              "dependsOn": [
+                "Form API"
+              ],
+              "technos": [
+                "Dojo.js"
+              ]
+            }
+          ],
+          "dependsOn": [
+            "Alfresco"
+          ],
+          "host": {
+            "MVWC": []
+          }
+        }
+      ],
+      "comments": "Includes all sub sites that do not require authentication.",
+      "developer": "Brandon Bartlett"
+    },
+    {
+      "name": "Login",
+      "hybrismigration": 0.7,
+      "children": [
+        {
+          "name": "Service",
+          "url": "http://www.marriottvacationclub.com/admin",
+          "children": [
+            {
+              "name": "My Reservations"
+            },
+            {
+              "name": "Marriott Rewards",
+              "hybrismigration": 0.6,
+              "dependsOn": [
+                "hybris"
+              ],
+              "technos": [
+                "Bootstrap 3.0",
+                "jQuery"
+              ]
+            },
+            {
+              "name": "Manage Maintenance Fees/Club Dues",
+              "hybrismigration": 0.6,
+              "dependsOn": [
+                "hybris"
+              ],
+              "technos": [
+                "Bootstrap 3.0",
+                "jQuery"
+              ]
+            },
+            {
+              "name": "Loan Status",
+              "hybrismigration": 0.6,
+              "dependsOn": [
+                "hybris"
+              ],
+              "technos": [
+                "Bootstrap 3.0",
+                "jQuery"
+              ]
+            },
+            {
+              "name": "Owners Association"
+            },
+            {
+              "name": "FriendShare"
+            },
+            {
+              "name": "Profile Updates"
+            }
+          ],
+          "dependsOn": [
+            "hybris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SaaS",
+      "children": [
+        {
+          "name": "Twitter"
+        },
+        {
+          "name": "Facebook"
+        },
+        {
+          "name": "Google Adwords"
+        },
+        {
+          "name": "Google Analytics",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "Adobe Target",
+          "comments": "",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "Olapic",
+          "url": "https://www.olapic.com",
+          "technos": [
+            "JavaScript"
+          ]
+        },
+        {
+          "name": "YouTube"
+        },
+        {
+          "name": "Foresee"
+        }
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {
+          "name": "Content API"
+        },
+        {
+          "name": "Resort API"
+        },
+        {
+          "name": "Search API"
+        },
+        {
+          "name": "Export API",
+          "children": [
+            {
+              "name": "Sitemap",
+              "children": [
+                {
+                  "name": "Sitemap Site"
+                },
+                {
+                  "name": "Sitemap News"
+                },
+                {
+                  "name": "Sitemap Videos"
+                },
+                {
+                  "name": "Sitemap Resorts"
+                }
+              ]
+            },
+            {
+              "name": "RSS Export"
+            }
+          ]
+        },
+        {
+          "name": "Form API"
+        },
+        {
+          "name": "Video API"
+        }
+      ]
+    },
+    {
+      "name": "hybris",
+      "hybrismigration": 0,
+      "children": [
+        {
+          "name": "hMC",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Catalog",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Components",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Multimedia",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Media",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Media Containers",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Internationalization",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Base Commerce",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Deeplink URLs",
+              "hybrismigration": 0
+            },
+            {
+              "name": "Content",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Websites",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Types",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Page Templates",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Content Slots",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Pages",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Components",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Navigation",
+                  "hybrismigration": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PCMS",
+          "hybrismigration": 0
+        },
+        {
+          "name": "WCMS",
+          "hybrismigration": 0,
+          "children": [
+            {
+              "name": "Live Editor",
+              "hybrismigration": 0,
+              "children": [
+                {
+                  "name": "Staged",
+                  "hybrismigration": 0
+                },
+                {
+                  "name": "Online",
+                  "hybrismigration": 0
+                }
+              ]
+            },
+            {
+              "name": "Responsive Live Editor",
+              "hybrismigration": 2
+            }
+          ]
+        },
+        {
+          "name": "Customer Service Cockpit",
+          "hybrismigration": 0
+        },
+        {
+          "name": "Admin Cockpit",
+          "hybrismigration": 0
+        }
+      ],
+      "technos": [
+        "JAVA",
+        "SpringMVC",
+        "Tomcat"
+      ],
+      "dependents": [
+        "Service",
+        "Marriott Rewards",
+        "Manage Maintenance Fees/Club Dues",
+        "Loan Status"
+      ],
+      "dependsOn": [
+        "Oracle"
+      ]
+    },
+    {
+      "name": "Alfresco",
+      "children": [
+        {
+          "name": "Document Management System"
+        }
+      ],
+      "dependents": [
+        "Website",
+        "Website"
+      ],
+      "dependsOn": [
+        "SVN"
+      ]
+    },
+    {
+      "name": "SVN"
+    },
+    {
+      "name": "Environments",
+      "children": [
+        {
+          "name": "QM09"
+        },
+        {
+          "name": "Production"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "children": [
+        {
+          "name": "Oracle"
+        },
+        {
+          "name": "Universe"
+        }
+      ]
+    }
+  ]
+}

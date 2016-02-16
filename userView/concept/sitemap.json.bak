@@ -1,0 +1,100 @@
+[  
+   {  
+      "name":"vizualization",
+      "count":500,
+      "key":"vizualization",
+      "pages":[  
+         {  
+            "name":"MarriottVacationClub.com Home Page",
+            "key":"1",
+            "title":"Home Page",
+            "url":"http://10.206.6.37/mvc.com/"
+         },
+         {  
+            "name":"Destinations",
+            "key":"2",
+            "title":"Description of Destinations",
+            "url":"http://10.206.6.37/mvc.com/vacation-resorts/index.html"
+         },
+         {  
+            "name":"Ownership",
+            "key":"3",
+            "title":"Description of Ownership",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations2",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations3",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Marriott Vacation Club Collection",
+            "key":"4",
+            "title":"Description of MVC Collection",
+            "url":"http://10.206.6.37/mvc.com/vacation-resorts/marriott-vacation-club-collection.html"
+         }
+      ]
+   },
+   {  
+      "name":"authentication",
+      "count":500,
+      "key":"authentication",
+      "pages":[  
+         {  
+            "name":"MarriottVacationClub.com Home Page",
+            "key":"1",
+            "title":"Home Page",
+            "url":"http://10.206.6.37/mvc.com/"
+         },
+         {  
+            "name":"Destinations",
+            "key":"2",
+            "title":"Description of Destinations",
+            "url":"http://10.206.6.37/mvc.com/vacation-resorts/index.html"
+         },
+         {  
+            "name":"Ownership",
+            "key":"3",
+            "title":"Description of Ownership",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations2",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Reservations3",
+            "key":"4",
+            "title":"Description of Reservations",
+            "url":"http://localhost/mvc.com/#"
+         },
+         {  
+            "name":"Marriott Vacation Club Collection",
+            "key":"4",
+            "title":"Description of MVC Collection",
+            "url":"http://10.206.6.37/mvc.com/vacation-resorts/marriott-vacation-club-collection.html"
+         }
+      ]
+   }   
+]

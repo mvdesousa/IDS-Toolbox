@@ -8,7 +8,7 @@ $hybris = "http://10.206.6.37:9001"
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->      
       
     <!-- jQuery 2.1.3 -->
-    <script src="/dist/js/ZeroClipboard.js"></script>
+    <script src="/IDS-Toolbox/userView//dist/js/ZeroClipboard.js"></script>
     
       <!-- Main Header -->
       <header class="main-header">

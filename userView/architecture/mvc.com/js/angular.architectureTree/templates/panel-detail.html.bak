@@ -1,0 +1,108 @@
+
+<div class="details panel panel-info">
+    <div class="panel-heading">{{ node.name }}</div>
+    <div class="panel-body" id="scrollable">
+        <div class="url" ng-if="node.url">
+            <a href="{{ node.url }}" target="_blank">{{ node.url }}</a>
+        </div>
+
+        <div class="template" ng-if="node.template">
+            <strong>Template:</strong> <img src="images/{{ node.template }}.png"><br /><ul><li>{{ node.template }}</li></ul>
+        </div>
+        
+        <div class="preview" ng-if="node.preview">
+            <strong>Preview:</strong> <br /><img src="images/{{ node.preview }}" width="250px">
+        </div>
+        
+        <div class="pagetitle" ng-if="node.pagetitle">
+            <strong>Page Title:</strong> <br />{{ node.pagetitle }}
+        </div>
+        
+        <div class="spagename" ng-if="node.spagename">
+            <strong>s.PageName:</strong> <br /><span>{{ node.spagename }}</span>
+        </div>
+        
+        <div class="metadescription" ng-if="node.metadescription">
+            <strong>Meta Description:</strong> <br />{{ node.metadescription }}
+        </div>
+        
+        <div class="metatags" ng-if="node.metatags">
+            <strong>Meta Tags:</strong> <br />{{ node.metatags }}
+        </div>
+        
+        <div class="breakpoints" ng-if="node.breakpoint.mobile">
+            <h5><strong>Breakpoints:</strong></h5>
+            <div class="row">
+            		<div class="col-xs-3">
+            				<i class="fa fa-mobile fa-3x"></i>
+            				{{ node.breakpoint.mobile }}	
+            		</div>
+            		<div class="col-xs-3">
+            				<i class="fa fa-tablet fa-3x"></i>
+            				{{ node.breakpoint.tablet }}	
+            		</div>
+            		<div class="col-xs-3">
+            				<i class="fa fa-laptop fa-3x"></i>
+            				{{ node.breakpoint.laptop }}	
+            		</div>
+            		<div class="col-xs-3">
+            				<i class="fa fa-desktop fa-3x"></i>
+            				{{ node.breakpoint.desktop }}	
+            		</div>
+            </div>
+        </div>
+        			
+        <div class="comments" ng-if="node.comments">
+            <h5><strong>Comments:</strong></h5>
+            <div class="panel">
+            		<div class="">{{ node.comments }}</div>
+            </div>
+        </div>
+        
+        <div class="migration" ng-if="node.hybrismigration">
+            <h5><strong>hybris Migration:</strong></h5>
+            <div class="panel">
+            		<div class="">{{ node.hybrismigration }}% Completed</div>
+            </div>
+        </div>
+        
+        <div class="developer" ng-if="node.developer">
+            <h5><strong>Developer:</strong></h5>
+            <div class="panel">
+            		<div class="">{{ node.developer }}</div>
+            </div>
+        </div>
+        
+        <div class="properties" ng-if="node.details.Dependencies">
+            <h5><strong>Depends on:</strong></h5>
+            <ul>
+                <li ng-repeat="dependency in node.details.Dependencies">
+                    {{ dependency }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="properties" ng-if="node.details.Technos">
+            <h5><strong>Technology:</strong></h5>
+            <ul>
+                <li ng-repeat="techno in node.details.Technos">
+                    {{ techno }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="properties" ng-if="node.details.Host">
+            <h5><strong>Hosts:</strong></h5>
+            <ul>
+                <li ng-repeat="(hostName, servers) in node.host">
+                    {{ hostName }}
+                    <ul ng-if="servers">
+                        <li ng-repeat="server in servers">{{ server }}</li>
+                    </ul>
+                    <span ng-if="detail.via">({{ detail.via }})</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

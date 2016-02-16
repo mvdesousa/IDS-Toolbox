@@ -5,22 +5,22 @@
     <title>AdminLTE 2 | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Morris chart -->
-    <link href="plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
     <!-- jvectormap -->
-    <link href="plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Daterange picker -->
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/IDS-Toolbox/userView/IDS-Toolbox/userView/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +35,7 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/IDS-Toolbox/userView/IDS-Toolbox/userView/index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -65,7 +65,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                            <img src="/IDS-Toolbox/userView/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -77,7 +77,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/IDS-Toolbox/userView/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -89,7 +89,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/IDS-Toolbox/userView/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Developers
@@ -101,7 +101,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/IDS-Toolbox/userView/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Sales Department
@@ -113,7 +113,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/IDS-Toolbox/userView/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Reviewers
@@ -242,13 +242,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <img src="/IDS-Toolbox/userView/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="/IDS-Toolbox/userView/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       Alexander Pierce - Web Developer
                       <small>Member since Nov. 2012</small>
@@ -293,7 +293,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/IDS-Toolbox/userView/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>Alexander Pierce</p>
@@ -606,7 +606,7 @@
                             <span class='direct-chat-name pull-left'>Alexander Pierce</span>
                             <span class='direct-chat-timestamp pull-right'>23 Jan 2:00 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="/IDS-Toolbox/userView/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             Is this template really for free? That's unbelievable!
                           </div><!-- /.direct-chat-text -->
@@ -618,7 +618,7 @@
                             <span class='direct-chat-name pull-right'>Sarah Bullock</span>
                             <span class='direct-chat-timestamp pull-left'>23 Jan 2:05 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="/IDS-Toolbox/userView/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             You better believe it!
                           </div><!-- /.direct-chat-text -->
@@ -630,7 +630,7 @@
                             <span class='direct-chat-name pull-left'>Alexander Pierce</span>
                             <span class='direct-chat-timestamp pull-right'>23 Jan 5:37 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="/IDS-Toolbox/userView/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             Working with AdminLTE on a great new app! Wanna join?
                           </div><!-- /.direct-chat-text -->
@@ -642,7 +642,7 @@
                             <span class='direct-chat-name pull-right'>Sarah Bullock</span>
                             <span class='direct-chat-timestamp pull-left'>23 Jan 6:10 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="/IDS-Toolbox/userView/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             I would love to.
                           </div><!-- /.direct-chat-text -->
@@ -756,42 +756,42 @@
                     <div class="box-body no-padding">
                       <ul class="users-list clearfix">
                         <li>
-                          <img src="dist/img/user1-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user1-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Alexander Pierce</a>
                           <span class="users-list-date">Today</span>
                         </li>
                         <li>
-                          <img src="dist/img/user8-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user8-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Norman</a>
                           <span class="users-list-date">Yesterday</span>
                         </li>
                         <li>
-                          <img src="dist/img/user7-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user7-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Jane</a>
                           <span class="users-list-date">12 Jan</span>
                         </li>
                         <li>
-                          <img src="dist/img/user6-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user6-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">John</a>
                           <span class="users-list-date">12 Jan</span>
                         </li>
                         <li>
-                          <img src="dist/img/user2-160x160.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user2-160x160.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Alexander</a>
                           <span class="users-list-date">13 Jan</span>
                         </li>
                         <li>
-                          <img src="dist/img/user5-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user5-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Sarah</a>
                           <span class="users-list-date">14 Jan</span>
                         </li>
                         <li>
-                          <img src="dist/img/user4-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user4-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Nora</a>
                           <span class="users-list-date">15 Jan</span>
                         </li>
                         <li>
-                          <img src="dist/img/user3-128x128.jpg" alt="User Image"/>
+                          <img src="/IDS-Toolbox/userView/dist/img/user3-128x128.jpg" alt="User Image"/>
                           <a class="users-list-name" href="#">Nadia</a>
                           <span class="users-list-date">15 Jan</span>
                         </li>
@@ -982,7 +982,7 @@
                   <ul class="products-list product-list-in-box">
                     <li class="item">
                       <div class="product-img">
-                        <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                        <img src="/IDS-Toolbox/userView/dist/img/default-50x50.gif" alt="Product Image"/>
                       </div>
                       <div class="product-info">
                         <a href="javascript::;" class="product-title">Samsung TV <span class="label label-warning pull-right">$1800</span></a>
@@ -993,7 +993,7 @@
                     </li><!-- /.item -->
                     <li class="item">
                       <div class="product-img">
-                        <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                        <img src="/IDS-Toolbox/userView/dist/img/default-50x50.gif" alt="Product Image"/>
                       </div>
                       <div class="product-info">
                         <a href="javascript::;" class="product-title">Bicycle <span class="label label-info pull-right">$700</span></a>
@@ -1004,7 +1004,7 @@
                     </li><!-- /.item -->
                     <li class="item">
                       <div class="product-img">
-                        <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                        <img src="/IDS-Toolbox/userView/dist/img/default-50x50.gif" alt="Product Image"/>
                       </div>
                       <div class="product-info">
                         <a href="javascript::;" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
@@ -1015,7 +1015,7 @@
                     </li><!-- /.item -->
                     <li class="item">
                       <div class="product-img">
-                        <img src="dist/img/default-50x50.gif" alt="Product Image"/>
+                        <img src="/IDS-Toolbox/userView/dist/img/default-50x50.gif" alt="Product Image"/>
                       </div>
                       <div class="product-info">
                         <a href="javascript::;" class="product-title">PlayStation 4 <span class="label label-success pull-right">$399</span></a>
@@ -1210,31 +1210,31 @@
     </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.3 -->
-    <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <script src="/IDS-Toolbox/userView/plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
-    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- FastClick -->
-    <script src='plugins/fastclick/fastclick.min.js'></script>
+    <script src='/IDS-Toolbox/userView/plugins/fastclick/fastclick.min.js'></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/app.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/dist/js/app.min.js" type="text/javascript"></script>
     <!-- Sparkline -->
-    <script src="plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
     <!-- jvectormap -->
-    <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-    <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
     <!-- daterangepicker -->
-    <script src="plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
     <!-- datepicker -->
-    <script src="plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
     <!-- SlimScroll 1.3.0 -->
-    <script src="plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <!-- ChartJS 1.0.1 -->
-    <script src="plugins/chartjs/Chart.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/plugins/chartjs/Chart.min.js" type="text/javascript"></script>
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard2.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/dist/js/pages/dashboard2.js" type="text/javascript"></script>
 
     <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/dist/js/demo.js" type="text/javascript"></script>
   </body>
 </html>

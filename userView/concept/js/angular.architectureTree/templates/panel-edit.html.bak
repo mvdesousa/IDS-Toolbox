@@ -1,0 +1,115 @@
+<form name="editForm" ng-submit="editNode(editForm, $event)">
+    <div id="infopanel" class="details panel panel-info">
+        <div class="panel-heading">
+            <input type="text" ng-model="node.name" class="form-control"/>
+        </div>
+        <div class="panel-body" id="scrollable">
+            <div class="url">
+                <h5>Url:</h5>
+                <input type="text" ng-model="node.url" class="form-control" init-focus />
+            </div>
+            
+            <div class="breakpoints">
+            		<h5>Breakpoints:</h5>
+            		<div class="row">
+            				<div class="col-xs-3">
+            						<i class="fa fa-mobile fa-3x"></i>		
+            						<input type="text" ng-model="node.breakpoint.mobile" class="textbox" placeholder="480px" />
+            				</div>	
+            				<div class="col-xs-3">
+            						<i class="fa fa-tablet fa-3x"></i>		
+            						<input type="text" ng-model="node.breakpoint.tablet" class="textbox" placeholder="768px" />	
+            				</div>	
+            				<div class="col-xs-3">
+            						<i class="fa fa-laptop fa-3x"></i>	
+            						<input type="text" ng-model="node.breakpoint.laptop" class="textbox" placeholder="992px" />	
+            				</div>	
+            				<div class="col-xs-3">
+            						<i class="fa fa-desktop fa-3x"></i>	
+            						<input type="text" ng-model="node.breakpoint.desktop" class="textbox" placeholder="1200px" />	
+            				</div>	
+            		</div>
+            </div>
+            
+            <div class="template">
+                <h5>Template:</h5>
+                <select type="option" ng-model="node.template" class="form-control" init-focus >
+                	<option value="">Reset</option>	
+                	<option value="MVC.Container.3Column">MVC 3 Column Container</option>	
+                	<option value="MVC.Container-Wide.3Column">MVC 3 Column Wide Container</option>
+                	<option value="MAH.Container.3Column">MAH 3 Column Container</option>	
+                	<option value="MAH.Container-Wide.3Column">MAH 3 Column Wide Container</option>
+                </select>
+            </div>
+            
+            <div class="migration">
+                <h5>hybris Migration:</h5>
+                <select type="option" ng-model="node.hybrismigration" class="form-control" init-focus >
+                	<option value="0">Not Applicable</option>
+                	<option value="">Not Started</option>
+                	<option value="10">10% Started</option>
+                	<option value="20">20%</option>
+                	<option value="30">30%</option>
+                	<option value="40">40%</option>
+                	<option value="50">50%</option>
+                	<option value="60">60%</option>
+                	<option value="70">70%</option>
+                	<option value="80">80%</option>
+                	<option value="90">90%</option>
+                	<option value="100">100% Completed</option>	
+                </select>
+            </div>
+
+            <div class="comments">
+                <h5>Comments:</h5>
+                <textarea ng-model="node.comments" class="form-control" init-focus></textarea>
+            </div>
+            
+            <div class="developer">
+                <h5>Developer:</h5>
+                <textarea ng-model="node.developer" class="form-control" init-focus></textarea>
+            </div>
+
+
+            <div class="properties edit">
+                <h5>Depends on:<span class="glyphicon glyphicon-plus" ng-click="addDependency()"></span></h5>
+                <ul>
+                    <li ng-repeat="dependencies in node.dependsOn track by $index">
+                        <input type="text" ng-model="node.dependsOn[$index]" init-focus /> <span class="remove glyphicon glyphicon-remove" ng-click="deleteDependency($index)"></span>
+                    </li>
+                </ul>
+
+                <h5>Technology <span class="glyphicon glyphicon-plus" ng-click="addTechno()"></span></h5>
+                <ul>
+                    <li ng-repeat="techno in node.technos track by $index">
+                        <input type="text" ng-model="node.technos[$index]" init-focus />  <span class="remove glyphicon glyphicon-remove" ng-click="deleteTechno($index)"></span>
+                    </li>
+                </ul>
+
+                <h5>Hosts <span class="glyphicon glyphicon-plus" ng-click="addHostCategory()"></span></h5>
+                <ul>
+                    <li ng-repeat="(key, host) in node.host track by $index">
+                        <input type="text" ng-model="hostKeys[key]" init-focus /><span class="glyphicon glyphicon-plus" ng-click="addHost(key)"></span>
+                        <span class="remove glyphicon glyphicon-remove" ng-click="deleteHostCategory(key)"></span>
+
+                        <ul>
+                            <li ng-repeat="test in node.host[key] track by $index">
+                                <span class="remove glyphicon glyphicon-remove" ng-click="deleteHost(key, $index)"></span>
+                                <input type="text" ng-model="node.host[key][$index]" init-focus />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel-action">
+            <button type="button" ng-click="addNode()" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add</button>
+            <button type="button" ng-click="moveNode()" class="btn btn-default"><span class="glyphicon glyphicon-share-alt"></span> Move</button>
+            <button type="button" ng-click="deleteNode()" class="btn btn-warning"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+        <div class="panel-action">
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Save</button>
+            <button type="button" ng-click="leaveEdit()" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+    </div>
+</form>
