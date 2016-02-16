@@ -96,8 +96,41 @@
 										 You can place Font Awesome icons just about anywhere using the CSS Prefix <code>fa</code> and the icon's name. Font Awesome is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).
 									</p>
 									<div class="highlight">
+									
+										<style>
+											.highlight pre code.html{
+												float: left !important;
+											}
+											pre {
+												display: block;
+												padding: 9.5px;
+												margin: 0 0 10px;
+												font-size: 13px;
+												line-height: 1.42857143;
+												word-break: break-all;
+												word-wrap: break-word;
+												color: #333333;
+												background-color: #f5f5f5;
+												border: 1px solid #eeeeee;
+												border-radius: 4px;
+											}
+											pre code {
+												padding: 0;
+												font-size: inherit;
+												color: inherit;
+												white-space: pre-wrap;
+												background-color: transparent;
+												border-radius: 0;
+											}
+											
+											.nt {color: #2f6f9f;}
+											.na {color: #4f9fcf;}
+											.s {color: #d44950;}
+											.ni {color: #999999;}
+										</style>
+										
 										<pre>
-											<code class="html"><span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-camera-retro </code>
+											<code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-camera-retro </code>
 										</pre>
 									</div>
 									<div class="alert alert-success">
@@ -142,7 +175,7 @@
 									</p>
 									<div class="highlight">
 										<pre>
-											<code class="html"><span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-lg <span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-2x <span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-3x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-3x <span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-4x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-4x <span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-5x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-5x </code>
+											<code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-lg <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-2x <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-3x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-3x <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-4x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-4x <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera-retro fa-5x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-5x </code>
 										</pre>
 									</div>
 									<div class="alert alert-success">
@@ -179,10 +212,10 @@
 									<div class="highlight">
 										<pre>
 											<code class="html"><span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-home fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Home<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-book fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Library<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-pencil fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Applications<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-cog fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Settings<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-home fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Home<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-book fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Library<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-pencil fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Applications<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"list-group-item"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-cog fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Settings<span class="nt">&lt;/a&gt;</span>
 											<span class="nt">&lt;/div&gt;</span>
 											</code>
 										</pre>
@@ -214,10 +247,10 @@
 									<div class="highlight">
 										<pre>
 											<code class="html"><span class="nt">&lt;ul</span><span class="na">class=</span><span class="s">"fa-ul"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa-li fa fa-check-square"</span><span class="nt">&gt;&lt;/i&gt;</span>List icons<span class="nt">&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa-li fa fa-check-square"</span><span class="nt">&gt;&lt;/i&gt;</span>can be used<span class="nt">&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa-li fa fa-spinner fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>as bullets<span class="nt">&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa-li fa fa-square"</span><span class="nt">&gt;&lt;/i&gt;</span>in lists<span class="nt">&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa-li fa fa-check-square"</span><span class="nt">&gt;&lt;/i&gt;</span>List icons<span class="nt">&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa-li fa fa-check-square"</span><span class="nt">&gt;&lt;/i&gt;</span>can be used<span class="nt">&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa-li fa fa-spinner fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>as bullets<span class="nt">&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa-li fa fa-square"</span><span class="nt">&gt;&lt;/i&gt;</span>in lists<span class="nt">&lt;/li&gt;</span>
 											<span class="nt">&lt;/ul&gt;</span>
 											</code>
 										</pre>
@@ -246,7 +279,7 @@
 									</p>
 									<div class="highlight">
 										<pre>
-											<code class="html"><span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-quote-left fa-3x fa-pull-left fa-border"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-quote-left fa-3x fa-pull-left fa-border"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											...tomorrow we will run faster, stretch out our arms farther... And then one fine morning— So we beat on, boats against the current, borne back ceaselessly into the past. </code>
 										</pre>
 									</div>
@@ -277,11 +310,11 @@
 									</p>
 									<div class="highlight">
 										<pre>
-											<code class="html"><span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-spinner fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-circle-o-notch fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-refresh fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-cog fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-spinner fa-pulse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-spinner fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-circle-o-notch fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-refresh fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-cog fa-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-spinner fa-pulse"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											</code>
 										</pre>
 									</div>
@@ -319,12 +352,12 @@
 									</p>
 									<div class="highlight">
 										<pre>
-											<code class="html"><span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield"</span><span class="nt">&gt;&lt;/i&gt;</span> normal<span class="nt">&lt;br&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-90"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-90<span class="nt">&lt;br&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-180"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-180<span class="nt">&lt;br&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-270"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-270<span class="nt">&lt;br&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield fa-flip-horizontal"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-flip-horizontal<span class="nt">&lt;br&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-shield fa-flip-vertical"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-flip-vertical </code>
+											<code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield"</span><span class="nt">&gt;&lt;/i&gt;</span> normal<span class="nt">&lt;br&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-90"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-90<span class="nt">&lt;br&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-180"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-180<span class="nt">&lt;br&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield fa-rotate-270"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-rotate-270<span class="nt">&lt;br&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield fa-flip-horizontal"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-flip-horizontal<span class="nt">&lt;br&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-shield fa-flip-vertical"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-flip-vertical </code>
 										</pre>
 									</div>
 								</div>
@@ -372,23 +405,23 @@
 									<div class="highlight">
 										<pre>
 											<code class="html"><span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"fa-stack fa-lg"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-square-o fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-twitter fa-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-square-o fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-twitter fa-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											<span class="nt">&lt;/span&gt;</span>
 											fa-twitter on fa-square-o<span class="nt">&lt;br&gt;</span>
 											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"fa-stack fa-lg"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-circle fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-flag fa-stack-1x fa-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-circle fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-flag fa-stack-1x fa-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											<span class="nt">&lt;/span&gt;</span>
 											fa-flag on fa-circle<span class="nt">&lt;br&gt;</span>
 											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"fa-stack fa-lg"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-square fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-terminal fa-stack-1x fa-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-square fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-terminal fa-stack-1x fa-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											<span class="nt">&lt;/span&gt;</span>
 											fa-terminal on fa-square<span class="nt">&lt;br&gt;</span>
 											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"fa-stack fa-lg"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-camera fa-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-ban fa-stack-2x text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-camera fa-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-ban fa-stack-2x text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
 											<span class="nt">&lt;/span&gt;</span>
 											fa-ban on fa-camera </code>
 										</pre>
@@ -450,36 +483,36 @@
 									</p>
 									<div class="highlight">
 										<pre>
-											<code class="html"><span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-trash-o fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> Delete<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-default btn-sm"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span> Settings<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-lg btn-success"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;i</span><span class="na">class=</span><span class="s">"fa fa-flag fa-2x pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span> Font Awesome<span class="nt">&lt;br&gt;</span>Version 4.5.0<span class="nt">&lt;/a&gt;</span>
+											<code class="html"><span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-trash-o fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> Delete<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-default btn-sm"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span> Settings<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-lg btn-success"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+											<span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"fa fa-flag fa-2x pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span> Font Awesome<span class="nt">&lt;br&gt;</span>Version 4.5.0<span class="nt">&lt;/a&gt;</span>
 											<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-align-left"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-align-center"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-align-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-align-justify"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-align-left"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-align-center"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-align-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-default"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-align-justify"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
 											<span class="nt">&lt;/div&gt;</span>
 											<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"input-group margin-bottom-sm"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-envelope-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-envelope-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
 											<span class="nt">&lt;input</span><span class="na">class=</span><span class="s">"form-control"</span><span class="na">type=</span><span class="s">"text"</span><span class="na">placeholder=</span><span class="s">"Email address"</span><span class="nt">&gt;</span>
 											<span class="nt">&lt;/div&gt;</span>
 											<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-key fa-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-key fa-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
 											<span class="nt">&lt;input</span><span class="na">class=</span><span class="s">"form-control"</span><span class="na">type=</span><span class="s">"password"</span><span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
 											<span class="nt">&lt;/div&gt;</span>
 											<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"btn-group open"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-user fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> User<span class="nt">&lt;/a&gt;</span>
-											<span class="nt">&lt;a</span><span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span><span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-user fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> User<span class="nt">&lt;/a&gt;</span>
+											<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span><span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
 											<span class="nt">&lt;span</span><span class="na">class=</span><span class="s">"fa fa-caret-down"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
 											<span class="nt">&lt;ul</span><span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;a</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-pencil fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Edit<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;a</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-trash-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Delete<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;a</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"fa fa-ban fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Ban<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;a </span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-pencil fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Edit<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;a </span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-trash-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Delete<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;a </span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"fa fa-ban fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> Ban<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 											<span class="nt">&lt;li</span><span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-											<span class="nt">&lt;li&gt;&lt;a</span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span><span class="na">class=</span><span class="s">"i"</span><span class="nt">&gt;&lt;/i&gt;</span> Make admin<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+											<span class="nt">&lt;li&gt;&lt;a </span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i </span><span class="na">class=</span><span class="s">"i"</span><span class="nt">&gt;&lt;/i&gt;</span> Make admin<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 											<span class="nt">&lt;/ul&gt;</span>
 											<span class="nt">&lt;/div&gt;</span>
 											</code>
