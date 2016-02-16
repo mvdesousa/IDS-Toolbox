@@ -14,7 +14,7 @@ $hybris = "http://10.206.6.37:9001"
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="/index.php" class="logo">
+        <a href="/IDS-Toolbox/userView/index.php" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>MVC</b></span>
           <!-- logo for regular state and mobile devices -->

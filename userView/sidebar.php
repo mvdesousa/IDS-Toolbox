@@ -5,13 +5,25 @@
         <section class="sidebar" id="scrollspy">
 
           <!-- search form -->
-          <form action="/search.php" method="get" class="sidebar-form">
+          <form action="/IDS-Toolbox/userView/search.php" method="get" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search..."/>
               <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
             </div>
+			
+			<script>
+				$(".fa.fa-search").on("click",function(){
+					if ($(".input-group input.form-control").val() == ""){
+						window.alert("please input search keyword.")
+						
+						return false;
+					}else{
+						//success search
+					}
+				});
+			</script>
           </form>
           <!-- /.search form -->
           <!-- Sidebar Menu -->
