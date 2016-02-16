@@ -68,8 +68,12 @@
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper" height="700px">
-        <!-- Content Header (Page header) -->
-				<iframe src="/IDS-Toolbox/userView/builder/" width="100%" height="700px" scroll="noscroll"></iframe>
+        <section class="content">
+			<h2 class="page-header">MVC WYSIWYG Content Builder</h2>
+			<p>Drag and drop content from the right panel</p>
+			<!-- Content Header (Page header) -->
+			<iframe src="/IDS-Toolbox/userView/builder/" width="100%" height="1300px" scroll="noscroll"></iframe>
+		</section>
       </div><!-- /.content-wrapper -->
 
 

@@ -83,7 +83,7 @@
 					<section id='introduction'>
 					  <h2 class='page-header'><a href="#introduction">#Introduction</a></h2>
 					  <p class='lead'>
-					    The <b>MVCToolbox</b> will guide you through the documentation and associated tasks related to the hybris migration.
+					    The <b>IDSToolbox</b> will guide you through the documentation and associated tasks related to the hybris migration.
 					  </p>
 					</section><!-- /#introduction -->
         	

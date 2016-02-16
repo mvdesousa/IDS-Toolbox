@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -64,6 +63,7 @@
 
 					<div class="clearfix"></div>
 		</header>
+		
 		<div class="sidebar visible-md-block visible-lg-block col-xs-3">
 			<div id="sectionNav"> 
 				<div id="container">

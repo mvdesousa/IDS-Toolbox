@@ -82,7 +82,7 @@
 				<section class="content body">
 					  					<h2 class='page-header'><a href="#introduction">#Introduction</a></h2>
 					  					<p class='lead'>
-					  					  The <b>MVCToolbox</b> will guide you through the documentation and associated tasks related to the hybris migration.  To get a feel for HTML5, Bootstrap 3.0 and jQuery, the MVCToolbox was written with these platforms in mind.  The server-side platform is written in PHP and MySQL.  Future state may include running a hybris instance to manage the content.
+					  					  The <b>IDSToolbox</b> will guide you through the documentation and associated tasks related to the hybris migration.  To get a feel for HTML5, Bootstrap 3.0 and jQuery, the IDSToolbox was written with these platforms in mind.  The server-side platform is written in PHP and MySQL.  Future state may include running a hybris instance to manage the content.
 					  					</p>
 					
 					<section id="visual-sitemap">  					
