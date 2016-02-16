@@ -13,7 +13,7 @@
 
     <link href="scripts/contentbuilder.css" rel="stylesheet" type="text/css" />
     <!-- FontAwesome 4.3.0 -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
     
 		<link rel='stylesheet' type='text/css' href='stylesheets/bootstrap.min.css'>
