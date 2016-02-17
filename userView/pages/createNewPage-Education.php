@@ -96,38 +96,108 @@
 							
 							<div class="box-body">
 								<ol>
-									<li><!--step 1-->Click on the plus icon under the search bar in WCMS. <br/> <center><img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createItemButton.png"/></center></li>
-									<hr></hr>
-									<li><!--step 2-->When the <strong>"Create New Page - Select desired type"</strong> overlay comes up, you then select which Page Type you would like to create. For this example we are creating an Educational Page. Therefore you will select, <strong>Content Page</strong>. <br/> <center><img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-selectDesiredType-overlay.png"/></center></li>
-									<hr></hr>
-									<li><!--step 3-->After selecting your desired page type, you will get another overlay called "<strong>Create New Page - Select Master Template</strong>". For this example we will be selecting "<strong>Generic Education Page Template - MVW-S</strong>", <i>which has a thumbmail showing you a quick preview of how the page is laid out</i>. <br/> <center><img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createNewPage-selectMasterTemplate-overlay.png"/></center></li>
-									<hr></hr>
-									<li><!--step 4-->After selecting the page template for the new page we will be prompted with an overlay with a quick form. In this form you will find 7 options; <strong>Page Template, ID, Name, Catalog Version, Positioning, Label, and Other.</strong> <br/><br/> 
+									<li><!--step 1-->
+										Click on the plus icon under the search bar in WCMS.
 										
-										<center>
-											We will only be filling out a couple of these, the others will be pre-populated by Hybris
-											<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createNewPage-pageProperties.png"/>
+										<br/><br/>
+										<center>Step - Create New Page<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createItemButton.png"/></center>
+									</li>
+									
+									<hr></hr>
+									
+									<li><!--step 2-->
+										When the <strong>"Create New Page - Select desired type"</strong> overlay comes up, you then select which Page Type you would like to create. For this example we are creating an Educational Page. Therefore you will select, <strong>Content Page</strong>. 
+										
+										<br/><br/>
+										<center>Step - Select New Page Template<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-selectDesiredType-overlay.png"/></center>
+									</li>
+									
+									<hr></hr>
+									
+									<li><!--step 3-->
+										After selecting your desired page type, you will get another overlay called "<strong>Create New Page - Select Master Template</strong>". For this example we will be selecting "<strong>Generic Education Page Template - MVW-S</strong>", <i>which has a thumbmail showing you a quick preview of how the page is laid out</i>.
+										
+										<br/><br/>
+										<center>Step - Select New Page Template<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createNewPage-selectMasterTemplate-overlay.png"/></center>
+									</li>
+									
+									<hr></hr>
+									
+									<li><!--step 4-->
+										After selecting the page template for the new page we will be prompted with an overlay with a quick form. In this form you will find 7 options; <strong>Page Template, ID, Name, Catalog Version, Positioning, Label, and Other.</strong> <br/><br/> 
+									
+										<br/><br/>	
+										<center>			
+											Step - Page Properties<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-createNewPage-pageProperties.png"/>
+											<small><strong>Note: </strong>We will only be filling out a couple of these, the others will be pre-populated by Hybris</small>
 										</center>
 										
+										<br/><br/>	
 										<dl style="margin-left: 25px;">
 											<dt style="float: left; margin-right: 5px"> ID </dt>
 											<dd> - The ID section will be the unique ID name for this page, it has to be unique from any other page.</dd>
 											
 											<dt style="float: left; margin-right: 5px"> Name </dt>
 											<dd> - The page name can be the same as any other, but its good to keep it unique. This will make it easier for you to search for this page later to edit it in WCMS.</dd>
+											
+											<dt style="float: left; margin-right: 5px"> Label </dt>
+											<dd> - The label field is what the path to the page will be. You do not have to include <span class="token attr-value" style="font-style: italic; padding: 1px 5px; background-color: #dedede;">/timeshare/mvco/</span> that is altomatically included from one of our Java Controllers. All you need to do is set a new path, in this example; <span class="token attr-value" style="font-style: italic; padding: 1px 5px; background-color: #dedede;">"idsToolbox/education/example"</span></dd>
 										</dl>
 									</li>
+									
 									<hr></hr>
-									<li><!--step 5--></li>
+									
+									<li><!--step 5-->
+										After you have completed the page properties overlay. You will then be presented with the WCMS page with all of its components. First thing you will have to do is add a logo to the page, which is also our escape hatch for users to go back to the home page. 
+										
+										<br/><br/>
+										<center>Step - Adding MVWC Logo<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLogo.png"/></center>
+									</li>
+									
 									<hr></hr>
-									<li><!--step 6--></li>
+									
+									<li><!--step 6-->
+										When you click on the plus icon on the far right of the [csv_MVWC_HeaderMVCLogo] you will see the Select Desired Type overlay. Make sure to select MVC Banner Component. Our logo for MVWC is a Mvc Banner Component and not a MvcParagraphComponent (This does matter).
+										
+										<br/>
+										<br/>
+										
+										<center>Step - Select Desired Type <img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLogo-selectDesiredType-overlay.png"/></center>
+									</li>
+									
 									<hr></hr>
-									<li><!--step 7--></li>
+									
+									<li><!--step 7-->
+										After you have selected the <strong>Mvc Banner Component</strong> you will be sent to search for the component. If for any  reason you have to create a new logo, you should select <strong>Create a new item</strong>. We already have our logo created so we don't have to create a new item, but we do have to <strong>Select and existing reference</strong>.
+										
+										<br/>
+										<br/>
+									
+										<center>Step - Select Existing Reference<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLogo-selectAnExistingReference-overlay.png"/></center>
+									</li>
+									
 									<hr></hr>
-									<li><!--step 8--></li>
+									
+									<li><!--step 8-->
+										After clicking on <strong>Select an existing reference</strong> in the Step above, you will then be able to search for the logo component. You could search for the <strong>Name</strong>, or <strong>ID</strong>. But since we only have one logo for MVWC.com, its easier for you to just do a <strong>blank search</strong> and you'll see all of the results that are <strong>Mvc Banner Component</strong> (in our case, only 1 will show up).
+										
+										<br/>
+										<br/>
+									
+										<center>Step - Searching for an Existing Logo Component<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLogo-searchComponent-overlay.png"/></center>
+									
+									</li>
+									
 									<hr></hr>
-									<li><!--step 9--></li>
-									<hr></hr>
+									
+									<li><!--step 9-->
+										Once you have completed the search, and you get the results. You will select <strong>NAME: Header Logo Component</strong>. This is our current logo for MVWC, with the gold color.
+										
+										<br/>
+										<br/>
+										
+										<center>Step - Search Results<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLogo-searchResults-overlay.png"/></center>
+									</li>
 								</ol>
 
 							</div><!-- /.box-body -->
