@@ -5,6 +5,7 @@ $hybris = "http://10.206.6.37:9001"
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- jQuery UI 1.11.2 -->
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/IDS-Toolbox/userView/javascripts/scrollableDiv.js" type="text/javascript"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->      
       
     <!-- jQuery 2.1.3 -->
@@ -37,6 +38,14 @@ $hybris = "http://10.206.6.37:9001"
             </ul>
           </div>
         </nav>
+		
+		
+		<style>
+			video.html5Video{
+				width: 100%;
+			}
+		</style>
+		
       </header>
       	
 <script>
@@ -50,7 +59,7 @@ $( document ).ready(function() {
 			}
 		);
       var clientTarget = new ZeroClipboard( $('.btn-clipboard'), {
-    		moviePath: "/dist/flash/ZeroClipboard.swf",
+    		moviePath: "/IDS-Toolbox/userView/dist/flash/ZeroClipboard.swf",
     		debug: false
 			} );
 			
