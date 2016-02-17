@@ -110,9 +110,7 @@
 							
 							<div class="box-body">
 							<video>
-								<source src="videos/tutorials/educationPage-createNewPageExample1.mp4" type="video/mp4">
-								<source src="videos/tutorials/educationPage-createNewPageExample.webm" type="video/webm">
-								<source src="videos/tutorials/educationPage-createNewPageExample.ogg" type="video/ogg">
+								<source src="videos/tutorials/educationPage-createNewPageExample.mp4" type="video/mp4">
 							</video>
 
 							</div><!-- /.box-body -->
