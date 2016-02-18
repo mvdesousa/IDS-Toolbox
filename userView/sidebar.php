@@ -5,7 +5,7 @@
         <section class="sidebar" id="scrollspy">
 
           <!-- search form -->
-          <form action="/IDS-Toolbox/userView/search.php" method="get" class="sidebar-form">
+          <form action="/IDS-Toolbox/userView/search.php" method="get" id="searchBar" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search..."/>
               <span class="input-group-btn">
@@ -14,9 +14,12 @@
             </div>
 			
 			<script>
-				$(".fa.fa-search").on("click",function(){
+				$("#searchBar").submit(function() {
 					if ($(".input-group input.form-control").val() == ""){
-						window.alert("please input search keyword.")
+						$("#myModalLabel").html("Empty Search Term");
+						$("#myModalBody").html("Please enter a keyword in the search bar, for example; <strong>Hybris</strong>, <strong>WCMS</strong>, <strong>New Page</strong>, <strong>HTML5</strong>, etc... <br/><br/> <center><img src=\"/IDS-Toolbox/userView/pages/videoTutorial/screenShots/WCMS/searchExample/searchKeyWordExample.png\" /><br/>example</center> ");
+						
+						$("#myModal").modal('toggle');
 						
 						return false;
 					}else{
@@ -26,6 +29,7 @@
 			</script>
           </form>
           <!-- /.search form -->
+
           <!-- Sidebar Menu -->
 					<?php
 					    require_once('/connection/pdo_db.php');

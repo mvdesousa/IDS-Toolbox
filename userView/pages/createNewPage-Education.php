@@ -70,10 +70,12 @@
             Creating New Page
             <small>Education Page Example</small>
           </h1>
+		  
           <?php
-          $parentPage = "Coding Standards";
-          $pageName = "Forms";
+			  $parentPage = "Hybris";
+			  $pageName = "New WCMS Content Page";
           ?>
+		  
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active"><a href="#"><?php echo $parentPage; ?></a></li>
@@ -85,6 +87,7 @@
         <section class="content">
 			<!-- START PAGE -->
 			<h2 class="page-header">How to create a new page in Hybris</h2>
+
 			<!-- START ROW -->
 			<div class="row">
 				<div class="col-md-12">

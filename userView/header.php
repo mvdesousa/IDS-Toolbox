@@ -86,6 +86,7 @@ desired effect
 |---------------------------------------------------------|
 | SKINS         | skin-blue                               |
 |               | skin-black                              |
+|               | skin-black-light                        |
 |               | skin-purple                             |
 |               | skin-yellow                             |
 |               | skin-red                                |
@@ -103,7 +104,7 @@ desired effect
 		//Here is where you can set the initial page theme. If you change
 		//the theme color on the settings tab, it will save the new theme
 		//on your local storage.
-		var currentPageTheme = "skin-yellow-light";
+		var currentPageTheme = "skin-black-light";
 		/* $("body").removeClass("skin-blue");
 		$("body").removeClass("skin-black");
 		$("body").removeClass("skin-purple");
@@ -122,3 +123,7 @@ desired effect
 		});
 	});
 </script>
+
+<?php
+	include "includes/pageModal.php";
+?>
