@@ -88,7 +88,7 @@
     <!-- Slimscroll -->
     <script src="/IDS-Toolbox/userView//plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <!-- FastClick -->
-    <script src='/plugins/fastclick/fastclick.min.js'></script>
+    <script src='/IDS-Toolbox/userView//plugins/fastclick/fastclick.min.js'></script>
     
     
     <!-- jQuery Knob Chart -->
