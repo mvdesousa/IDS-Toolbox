@@ -60,7 +60,7 @@
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="skin-blue sidebar-mini fixed" data-spy="scroll" data-target="#scrollspy">
+  <body class="sidebar-mini fixed" data-spy="scroll" data-target="#scrollspy">
     <div class="wrapper">
 
 		<?php require_once('/header.php'); ?>
@@ -123,10 +123,10 @@
           	        <div class="row">  	
           	        	<script>
           	        		// Check if the userAgent contains "msie"
-												if(navigator.userAgent.toLowerCase().indexOf("msie") != -1)){
-     											//If so, then this is Internet Explorer
-     											alert("This is IE");
-												}	
+							if(navigator.userAgent.toLowerCase().indexOf("msie") != -1){
+								//If so, then this is Internet Explorer
+								alert("This is IE");
+							};
           	        	</script>
           	        	<div id="IEMessage"></div>
           	  					<div class="embed-responsive embed-responsive-4by3">

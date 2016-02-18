@@ -60,7 +60,7 @@
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="skin-blue sidebar-mini fixed" data-spy="scroll" data-target="#scrollspy">
+  <body class="sidebar-mini fixed" data-spy="scroll" data-target="#scrollspy">
     <div class="wrapper">
 
 		<?php require_once('/header.php'); ?>

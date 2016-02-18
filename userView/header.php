@@ -1,5 +1,7 @@
 <?php
-$hybris = "http://10.206.6.37:9001"
+$hybris = "http://10.206.6.37:9001";
+
+// include 'IDS-Toolbox/userView/changeTheme.php';
 ?>
 
 <!-- jQuery 2.1.3 -->
@@ -47,14 +49,6 @@ $hybris = "http://10.206.6.37:9001"
 				}
 	</style>
 </header>
-
-<script>
-	$( document ).ready(function() { 
-		$("body").removeClass("skin-blue ");
-		$("body").addClass("skin-green");
-		
-	};	
-</script>
 
 <script>
 	$( document ).ready(function() {

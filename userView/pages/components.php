@@ -53,7 +53,7 @@
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="skin-blue sidebar-mini">
+  <body class="sidebar-mini">
     <div class="wrapper">
 
 		<?php require_once('../header.php'); ?>
