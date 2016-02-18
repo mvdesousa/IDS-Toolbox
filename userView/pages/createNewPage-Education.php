@@ -342,6 +342,189 @@
 										</center>
 									</li>
 									
+									<hr></hr>
+									
+									<li id="tutorialStep21"><!--step 21-->
+										Now we will be creating a new component. All we have to fill out in this section is the <strong>Name</strong>. Remember to always keep a good naming structure, so that its easier for you to relate components. For this example we will name our alert are component <strong>idsToolbox-educationExample-alertArea</strong>.
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Create new alert area component
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addAlertArea-addComponentName.png"/>
+											</div>
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep22"><!--step 22-->
+										After you are done creating your alert area. We will now create the content section, by clicking on the far right plus icon. Once you have clicked on the far right icon, you will select <strong>MvcParagraphComponent</strong>, the next step you will select <strong>Create a new item</strong>, and on the final step you will add the new component name.
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Create new content area component
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-contentArea-addComponentName.png"/>
+											</div>
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep23"><!--step 23-->
+										By now you should be able to add a component slot so we will leave the final step for you to practice. Please go ahead and add a component for the legal code area. <strong>Note: </strong> Generally legal code areas are unique per page and per content so make sure you are creating a new reference, unless you are utilizing the same legal code for multiple pages. This is not common, but you may come across a scenario where you will need to share the same component on different pages. Like we do with the <a href="owners.marriottvacationclub.com">owners.marriottvacationclub.com</a> logo for example.
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Create new legal code
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addLegalCode.png"/>
+											</div>
+											This is how it should look after you have created the new legal code area
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep24"><!--step 24-->
+										After you have created all of the components, we will now be able to add content to each one. We will show you how to add text to the content area and then view it on the browser. Look for the <Strong>Content Area Component</Strong> and click on the far right pencil icon.
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Adding content
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addContentText.png"/>
+											</div>
+											This is the content area component in our example
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep25"><!--step 25-->
+										After clicking on the pencil icon, you will see a window sliding into your view to the right of the screen. Inside the <strong>Component Property Window</strong> you will see multiple panels; <strong>Basic</strong>, <strong>Editorial</strong>, <strong>Context Visibility</strong>, and <strong>Administration</strong>. To add content to a component you will be doing it so from the <strong>Editorial</strong> panel.
+										
+										<br/>
+										<br/>
+										
+										This panel accepts <strong>HTML</strong>, <strong>jQuery</strong>, <strong>CSS</strong>. Because we are in <strong>WCMS</strong>, we are able to add those languages into our component area and Hybris will not break the code. It will read our code and display it correctly in our browser. So for this example we have added an HTML heading and a bolded text.
+										
+										<br/>
+										<br/>
+										
+										<strong style="color: red;">Note:</strong> If you do not close your HTML tags properly it could break the code. For example if you forget to close an extra div, the browser will break your code. Make sure that you close any HTML tag that you may have opened. This also goes for jQuery content, if you break it here the browser will catch it.
+										
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Property Panel
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addContentText-rightPanel.png"/>
+											</div>
+											This is the property panel window
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep26"><!--step 26-->
+										Now that you have added all components and its content, we are now going to push it live. If you look on the top right corner of your page, you will be able to view a red icon. That is our synchronization icon, go ahead and click on the sync and it will not only sync the components but also the page itself.
+										
+										<br/>
+										<br/>
+										
+										<div>
+											<center class="col-md-6">
+												Step - Syncing Page
+												<div>
+													<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-pageRedSync.png"/>
+												</div>
+												Not Synced Status
+											</center>
+											
+											<center class="col-md-6">
+												Step - Syncing Page
+												<div>
+													<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-pageRedSyncing.png"/>
+												</div>
+												Syncing Status
+											</center>
+										</div>
+										<div class="clearfix"></div>
+											
+											<br/>
+											<br/>
+											
+											<center>
+												Step - Syncing Page
+												<div>
+													<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-syncComplete.png"/>
+												</div>
+												Sync Completed
+											</center>
+											
+											<br/>
+											<br/>
+											
+											Once you have completed the sync of the page, you will see that all of the icons on the components slots along with the page sync icon itself are now in green. Meaning that the page and all of its components were synced. If you wanted to sync component by compnent, you would have to simply click on the sync icon related to that compnent it self.
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep27"><!--step 27-->
+										Once you have synced the page, you will now be able to view it on the browser. Its easy to do it so, because we have our path already completed. So all we have to do is click on the page pencil icon next to the page sync icon, on the far top right. Once you have clicked on the page edit icon, we will see the property panel to the right of the screen. We will now copy whats inside of the <Strong>Label</Strong>.
+											
+										<br/>
+										<br/>
+											
+										<center>
+											Step - Viewing page on browser
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-pageEditIcon.png"/>
+											</div>
+											Page edit icon
+										</center>
+										
+										<br/>
+										<br/>
+											
+										<center>
+											Step - Page attributes
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-pageAttributes.png"/>
+											</div>
+											Copy <Strong>Label</Strong> field
+										</center>
+									</li>
+									
+									<hr></hr>
+									
+									<li id="tutorialStep28"><!--step 28-->
+										Once you are ready to view the page, copy the <strong>Label</strong>, open your browser and go to the owners environment that you are working on (In our example we are in ST01.Owners.MarriottVacationClub.com). Once there, go to the browser url and at the end of <strong>/timeshare/mvco/</strong> you will paste your <strong>Label</strong>. For our example our page label is <strong>/idsToolbox/education/example</strong>.
+											
+										<br/>
+										<br/>
+											
+										<center>
+											Step - New page browser view
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-browserView.png"/>
+											</div>
+											Chrome Browser Version 45.0.2454.85 - New Page Preview
+										</center>
+									</li>
+									
 									
 									
 									
@@ -398,16 +581,42 @@
 													<li><a href="#tutorialStep14">14. Selecting the Existing LeftNav</a></li>
 												</ul>
 											</li>
+										</ul>
+										
+										
+										<ul style="list-style: none;" class="col-md-6 col-sm-12">
 											<li>
-												<a href="#tutorialStep10">15. Left Navigation for Mobile</a>
+												<a href="#tutorialStep15">15. Left Navigation for Mobile</a>
 											
 												<ul style="list-style: none;">
-													<li><a href="#tutorialStep11">16. Select Navigation Components Collection - Mobile</a></li>
-													<li><a href="#tutorialStep12">17. Select Existing Reference</a></li>
-													<li><a href="#tutorialStep13">18. Search for an Existing Left Navigation</a></li>
-													<li><a href="#tutorialStep14">19. Selecting the Existing LeftNav</a></li>
+													<li><a href="#tutorialStep16">16. Select Navigation Components Collection - Mobile</a></li>
+													<li><a href="#tutorialStep17">17. Select Existing Reference</a></li>
+													<li><a href="#tutorialStep18">18. Search for an Existing Left Navigation</a></li>
+													<li><a href="#tutorialStep19">19. Selecting the Existing LeftNav</a></li>
 												</ul>
 											</li>
+											<li>
+												<a href="#tutorialStep20">20. Create Alert Area</a>
+												
+												<ul style="list-style: none;">
+													<li><a href="#tutorialStep21">21. Select new page desired type</a></li>
+													<li><a href="#tutorialStep22">22. Select new page Template</a></li>
+													<li><a href="#tutorialStep23">23. Create new legal code</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#tutorialStep24">24. Adding content to component</a>
+												
+												<ul style="list-style: none;">
+													<li><a href="#tutorialStep25">25. New page properties</a></li>
+												</ul>
+											</li>
+											
+											<li><a href="#tutorialStep26">26. Syncing Page/Component</a></li>
+											
+											<li><a href="#tutorialStep27">27. Getting page URL</a></li>
+											
+											<li><a href="#tutorialStep28">27. Viewing new page on browser</a></li>
 										</ul>
 										
 									</div>
@@ -423,7 +632,8 @@
 							</div><!-- /.box-header -->
 							
 							<div class="box-body">
-								<video controls class="html5Video">
+								<video controls class="html5Video" poster="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-browserView.png">
+									
 									<source src="http://10.206.6.49/IDS-Toolbox/userView/pages/videoTutorial/educationPage-createNewPageExample.mp4" type="video/mp4">
 									<source src="http://10.206.6.49/IDS-Toolbox/userView/pages/videoTutorial/educationPage-createNewPageExample.webm" type="video/webm">
 								</video>
