@@ -14,6 +14,13 @@
             </div>
 			
 			<script>
+				$(function() {
+					$('.control-sidebar').removeClass("control-sidebar-dark");
+					$('.control-sidebar').addClass("control-sidebar-light");
+				});
+				
+				
+				
 				$("#searchBar").submit(function() {
 					if ($(".input-group input.form-control").val() == ""){
 						$("#myModalLabel").html("Empty Search Term");

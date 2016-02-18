@@ -534,12 +534,15 @@
 									
 									
 									
+									
+									
+									
+									
+									
+									
+									
 								</ol>
-
 							</div><!-- /.box-body -->
-							
-							<center><small><strong>Note for Marcos</strong>: Stopped at [3m:19s] on the video. Please finish tutorial.</small></center>
-							
 						</div><!-- /.box -->
 					</div>
 					

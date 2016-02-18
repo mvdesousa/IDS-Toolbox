@@ -101,18 +101,20 @@ desired effect
 -->
 <script type="text/javascript">
 	$(document).ready(function() { 
-		//Here is where you can set the initial page theme. If you change
-		//the theme color on the settings tab, it will save the new theme
-		//on your local storage.
-		var currentPageTheme = "skin-black-light";
-		/* $("body").removeClass("skin-blue");
-		$("body").removeClass("skin-black");
-		$("body").removeClass("skin-purple");
-		$("body").removeClass("skin-yellow");
-		$("body").removeClass("skin-red");
-		$("body").removeClass("skin-green"); */
-		
-		$("body").addClass(currentPageTheme);
+		if (localStorage.getItem("skin") === null) {
+			//Here is where you can set the initial page theme. If you change
+			//the theme color on the settings tab, it will save the new theme
+			//on your local storage.
+			var currentPageTheme = "skin-black-light";
+			/* $("body").removeClass("skin-blue");
+			$("body").removeClass("skin-black");
+			$("body").removeClass("skin-purple");
+			$("body").removeClass("skin-yellow");
+			$("body").removeClass("skin-red");
+			$("body").removeClass("skin-green"); */
+			
+			$("body").addClass(currentPageTheme);
+		}
 	});
 </script>
 
