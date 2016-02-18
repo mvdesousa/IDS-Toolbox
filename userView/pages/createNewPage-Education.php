@@ -67,8 +67,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Creating New Page - Education
-            <small>How-To: How to create a new page in Hybris.</small>
+            Creating New Page
+            <small>Education Page Example</small>
           </h1>
           <?php
           $parentPage = "Coding Standards";
@@ -84,7 +84,7 @@
         <!-- Main content -->
         <section class="content">
 			<!-- START PAGE -->
-			<h2 class="page-header">MVC Forms</h2>
+			<h2 class="page-header">How to create a new page in Hybris</h2>
 			<!-- START ROW -->
 			<div class="row">
 				<div class="col-md-12">
@@ -312,6 +312,11 @@
 										<br/>
 										
 										<center>Step - Breadcrumb component properties<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addBreadCrumb-componentProperties.png"/></center>
+										
+										<br/>
+										<br/>
+										
+										<center>Example: A successfully added breadcrumb component<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addBreadCrumb-confirmComponent.png"/>The red indicates that it hasn't been synced yet, we will do that later on</center>
 									</li>
 									
 									
