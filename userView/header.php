@@ -1,7 +1,5 @@
 <?php
-$hybris = "http://10.206.6.37:9001";
-
-// include 'IDS-Toolbox/userView/changeTheme.php';
+	$hybris = "http://10.206.6.37:9001";
 ?>
 
 <!-- jQuery 2.1.3 -->
@@ -76,6 +74,44 @@ $hybris = "http://10.206.6.37:9001";
 					  $(this).removeClass("btn-clipboard-hover");
 				  }
 				);
+	});
+</script>
+
+
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<script type="text/javascript">
+	$(document).ready(function() { 
+		//Here is where you can set the initial page theme. If you change
+		//the theme color on the settings tab, it will save the new theme
+		//on your local storage.
+		var currentPageTheme = "skin-yellow-light";
+		/* $("body").removeClass("skin-blue");
+		$("body").removeClass("skin-black");
+		$("body").removeClass("skin-purple");
+		$("body").removeClass("skin-yellow");
+		$("body").removeClass("skin-red");
+		$("body").removeClass("skin-green"); */
+		
+		$("body").addClass(currentPageTheme);
 	});
 </script>
 
