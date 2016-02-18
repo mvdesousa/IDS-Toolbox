@@ -319,6 +319,29 @@
 										<center>Example: A successfully added breadcrumb component<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addBreadCrumb-confirmComponent.png"/>The red indicates that it hasn't been synced yet, we will do that later on</center>
 									</li>
 									
+									<hr></hr>
+									
+									<li id="tutorialStep20"><!--step 20-->
+										After you have completed with the breadcrumb you will now create the alert area. Click on the far right plus icon on the <Strong>csn_EDU_GenereicPage_AlertArea</strong>, an overlay will come up asking you to either <strong>Select and existing reference</strong>, or <strong>Create a new item</strong>. Remember because the alert area is a unique content per page, we will need to <strong>Create a new item</strong>.
+										
+										<br/>
+										<br/>
+										
+										<center>
+											Step - Add new alert area
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addAlertArea.png"/>
+											</div>
+											
+											<br/>
+											
+											Step - Create new item
+											<div>
+												<img class="img-responsive" src="videoTutorial\screenShots\WCMS\creatingNewPage-Education\createNewPage-addAlertArea-createNewItem.png"/>
+											</div>
+										</center>
+									</li>
+									
 									
 									
 									
@@ -329,7 +352,7 @@
 
 							</div><!-- /.box-body -->
 							
-							<center><small><strong>Note for Marcos</strong>: Stopped at [3m:06s] on the video. Please finish tutorial.</small></center>
+							<center><small><strong>Note for Marcos</strong>: Stopped at [3m:19s] on the video. Please finish tutorial.</small></center>
 							
 						</div><!-- /.box -->
 					</div>
