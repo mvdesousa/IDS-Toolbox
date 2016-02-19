@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* Custom Font */
 @font-face {
 	font-family: "marriott-icons";
@@ -62,6 +61,9 @@
 .icon-floorplan:before {
 	content: "f";
 }
+
+
+
 
 
 /* Global */

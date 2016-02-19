@@ -1,5 +1,34 @@
 <?php
 	$hybris = "http://10.206.6.37:9001";
+	
+	session_start();
+	if ( !isset($_SESSION['userIsLoggedIn'])){
+		/* echo "<h1>LoggedIn as - ",$_SESSION['userIsLoggedIn'];
+		echo "<br>";
+		echo "SERVER REFERRER -> ",$_SERVER['HTTP_REFERER']; */
+		
+		$userPageURL = $_SERVER['SCRIPT_NAME'];
+		header( "Location: /IDS-Toolbox/userView/main_login.php");
+		
+		/*
+		echo "<br>";
+		echo "test : ",$userPageURL;
+		
+		if( $userPageURL != "/IDS-Toolbox/userView/main_login.php" ){
+			echo "<br>";
+			echo( "Location A: ".isset($userPageURL) );
+			header( "Location: ".$userPageURL );
+			
+			exit;
+		}else if( $userPageURL == "/IDS-Toolbox/userView/main_login.php" ){
+			echo "<br>";
+			echo( "Location A: ".isset($userPageURL) );
+			header( "Location: /IDS-Toolbox/userView/main_login.php");
+			
+			exit;
+		};
+		*/
+	};
 ?>
 
 <!-- jQuery 2.1.3 -->
@@ -12,6 +41,20 @@
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <!-- jQuery 2.1.3 -->
 <script src="/IDS-Toolbox/userView/dist/js/ZeroClipboard.js"></script>
+
+<style>
+	.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	*:focus {
+		outline: none;
+	}
+</style>
 
 <!-- Main Header -->
 <header class="main-header">
@@ -32,11 +75,13 @@
 		
 		<!-- Navbar Right Menu-->
 		<div class="navbar-custom-menu">
+		
 			<ul class="nav navbar-nav">
 				<!-- Control Sidebar Toggle Button -->
-				<li>
-				<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-				</li>
+				<li><a class="unselectable" href="/IDS-Toolbox/userView/myAccount.php"><?php session_start();  echo "Welcome, <strong>",$_SESSION['username'],"</strong>" ?></a></li>
+				<li><a href='/IDS-Toolbox/userView/logout.php'> Logout <i class="fa fa-sign-out"></i> </a></li>
+				<li><a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a></li>
+				
 			</ul>
 		</div>
 	</nav>
