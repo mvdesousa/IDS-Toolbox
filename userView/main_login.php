@@ -130,7 +130,19 @@ body{
 *:focus {
     outline: none;
 }
-</STYLE>
+	.unselectable {
+		cursor: default;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	*:focus {
+		outline: none;
+	}
+</style>
 
 <html>
 	<head>
@@ -149,14 +161,14 @@ body{
 	
 	<body>
 		<div class="register-form">
-			<h1><strong>IDS</strong><small style="color: #fff;">Toolbox</small></h1>
+			<h1 class="unselectable"><strong>IDS</strong><small style="color: #fff;">Toolbox</small></h1>
 			<hr>
 			
 			<form class="col-md-12" action="checkLogInPage.php" method="POST">
-					<p><label for="username">User Name</label>
+					<p><label for="username" class="unselectable">User Name</label>
 					<input id="username" type="text" name="username" placeholder="username" value=""/></p>
 				 
-					 <p><label for="password">Password</label>
+					 <p><label for="password" class="unselectable">Password</label>
 					 <input id="password" type="password" name="password" placeholder="password" value=""/></p>
 				 
 					<a style="display: none; color: white; margin-left: 80px;" href="register.php">Signup</a>
