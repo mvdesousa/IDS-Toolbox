@@ -103,6 +103,14 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="accountInfo">
 							<div class="panel-body">
+								<!-- Data coming from myAccountConnect -->
+								<!-- ------------------------------------ Account Type Information --------------------------------- -->
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Account Type</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userAccountType ?></div>
+								</div>
+								<div class="clearfix"></div>
+								
 								<!-- ------------------------------------ Personal Information --------------------------------- -->
 								<div class="panel-heading"><h4>Personal Information</h4></div>
 								<div class="myAccountItem">
@@ -143,6 +151,27 @@
 						
 						<div role="tabpanel" class="tab-pane fade" id="passwordRecovery">
 							<div class="panel-body">
+								<form class="col-md-6">
+									<label>Current Password</label>
+									<br/>
+									<input type="password" class="col-md-12 roundThis" placeholder="&#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;"></input>
+									<div class="clearfix"></div>
+									
+									<br/>
+									<br/>
+									<br/>
+									
+									<label>New Password</label>
+									<br/>
+									<input type="password" class="col-md-12 roundThis" placeholder="password"></input>
+									<div class="clearfix"></div>
+									
+									<label>Confirm New Password</label>
+									<br/>
+									<input type="password" class="col-md-12 roundThis" placeholder="password"></input>
+									<div class="clearfix"></div>
+								</form>
+							
 							</div>
 						</div>
 						
