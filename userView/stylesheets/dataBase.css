@@ -1,0 +1,24 @@
+.myAccountItem .dataBaseValue{
+	border: 1px solid #ECF0F5;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: not-allowed;
+}
+.myAccountItem .dataBaseValue:hover{
+	border: 1px solid #ccc;
+	background: #FAFAFA;
+}
+
+.myAccountItem .dataBaseValueLabel{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+@media screen and (max-width: 990px) {
+    .myAccountItem .dataBaseValue.activeOnMobile{
+		border: 1px solid #ccc;
+		background: #FAFAFA;
+	}
+}

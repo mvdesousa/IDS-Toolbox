@@ -81,29 +81,45 @@
 						<li role="presentation" class="active col-md-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account Information</a></li>
 						<li role="presentation" class="col-md-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Password Recovery</a></li>
 						<li role="presentation" class="col-md-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Board Message</a></li>
-						<li role="presentation" class="col-md-3"><a href="#" data-toggle="control-sidebar">Settings</a></li>
 					</ul>
 
 					<!-- Tab panes -->
+					<style>
+						.panel-body{
+							min-height: 500px;
+							border-left: 1px solid #ddd;
+							border-bottom: 1px solid #ddd;
+							border-right: 1px solid #ddd;
+						}
+					</style>
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home">
 							<div class="panel-body">
-								<?php
-									echo "<strong>Full Name</strong> - ",$userFname;
-									echo "<br/>";
-									echo "<strong>Username</strong> - ",$userName;
-									echo "<br/>";
-									echo "<strong>E-Mail</strong> - ",$userEmail;
-								?>
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Full Name</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userFname ?></div>
+								</div>
 								
-								<div class=""></div>
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel"><strong>User Name</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userName ?></div>
+								</div>
+								
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userEmail ?></div>
+								</div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="profile"></div>
-						<div role="tabpanel" class="tab-pane fade" id="messages"></div>
-						<div role="tabpanel" class="tab-pane fade" id="settings"></div>
+						<div role="tabpanel" class="tab-pane fade" id="profile">
+							<div class="panel-body"></div>
+						<div role="tabpanel" class="tab-pane fade" id="messages">
+							<div class="panel-body"></div></div>
+						<div role="tabpanel" class="tab-pane fade" id="settings">
+							<div class="panel-body"></div></div>
 					</div>
-
+					
+					<strong style="color: red;">Note:</strong> you can only view, you cannot edit any information yet.
 				</div>
 			</section>
 			
