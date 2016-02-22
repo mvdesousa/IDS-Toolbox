@@ -65,23 +65,51 @@
 
 		<?php require_once('/header.php'); ?>
 		<?php require_once('/sidebar.php'); ?>
+		<?php require_once('/myAccountConnect.php'); ?>
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper" height="700px">
 			<section class="content">
 				<h2 class="page-header">My Account</h2>
-				<p>Soon you will be able to view and edit your account info. As of today you will only be able to view some of your information. We are working on getting this page fully developed.</p>
+				<p>My Account gives you quick access to settings and tools that let you safeguard your data.</p>
 				
 				<br/>
 				
-				<?php
-					session_start();
-					
-					echo "<strong>Full Name</strong> - ",$_SESSION['name'];
-					echo "<br/>";
-					echo "<strong>Username</strong> - ",$_SESSION['username'];
-				?>
+				<div>
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs " role="tablist">
+						<li role="presentation" class="active col-md-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account Information</a></li>
+						<li role="presentation" class="col-md-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Password Recovery</a></li>
+						<li role="presentation" class="col-md-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Board Message</a></li>
+						<li role="presentation" class="col-md-3"><a href="#" data-toggle="control-sidebar">Settings</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home">
+							<div class="panel-body">
+								<?php
+									echo "<strong>Full Name</strong> - ",$userFname;
+									echo "<br/>";
+									echo "<strong>Username</strong> - ",$userName;
+									echo "<br/>";
+									echo "<strong>E-Mail</strong> - ",$userEmail;
+								?>
+								
+								<div class=""></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="profile"></div>
+						<div role="tabpanel" class="tab-pane fade" id="messages"></div>
+						<div role="tabpanel" class="tab-pane fade" id="settings"></div>
+					</div>
+
+				</div>
 			</section>
+			
+				
+			
+			
 		</div><!-- /.content-wrapper -->
 	</body>
 

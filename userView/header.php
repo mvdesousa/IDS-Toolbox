@@ -10,6 +10,8 @@
 		$userPageURL = $_SERVER['SCRIPT_NAME'];
 		header( "Location: /IDS-Toolbox/userView/main_login.php");
 		
+		
+		
 		/*
 		echo "<br>";
 		echo "test : ",$userPageURL;
@@ -78,7 +80,7 @@
 		
 			<ul class="nav navbar-nav">
 				<!-- Control Sidebar Toggle Button -->
-				<li><a class="unselectable" href="/IDS-Toolbox/userView/myAccount.php"><?php session_start();  echo "Welcome, <strong>",$_SESSION['username'],"</strong>" ?></a></li>
+				<li><a class="unselectable" href="/IDS-Toolbox/userView/myAccount.php"><?php session_start();  echo "Welcome, <strong>",$_SESSION['userFname'],"</strong>" ?></a></li>
 				<li><a href='/IDS-Toolbox/userView/logout.php'> Logout <i class="fa fa-sign-out"></i> </a></li>
 				<li><a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a></li>
 				

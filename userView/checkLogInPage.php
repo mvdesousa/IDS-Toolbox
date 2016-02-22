@@ -4,6 +4,10 @@
 	
 	session_start();
 	require('connect.php');
+		
+		
+		
+		
 	
 	//3. If the form is submitted or not.
 	//3.1 If the form is submitted
@@ -45,6 +49,24 @@
 			header("Location: /IDS-Toolbox/userView/index.php\r\n");
 			
 		};
+		
+		
+		$myAccountResults = mysqli_query($connection,"SELECT * FROM user WHERE username='".$_SESSION['username']."'");
+		
+		$myAccountResultsRow = mysqli_fetch_assoc($myAccountResults);
+		
+		$userFname =  $myAccountResultsRow['name'];
+		$userName =  $myAccountResultsRow['username'];
+		$userEmail =  $myAccountResultsRow['email'];
+		
+		$_SESSION['userFname'] = $userFname;
+		$_SESSION['userName'] = $userName;
+		$_SESSION['userEmail'] = $userEmail;
+		
+		
+		
+		
+		
 		/*
 		if ( isset($_SESSION['username'])){
 			header("Location: index.php\r\n");
