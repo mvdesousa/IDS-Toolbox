@@ -78,9 +78,9 @@
 				<div>
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs " role="tablist">
-						<li role="presentation" class="active col-md-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account Information</a></li>
-						<li role="presentation" class="col-md-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Password Recovery</a></li>
-						<li role="presentation" class="col-md-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Board Message</a></li>
+						<li role="presentation" class="active col-md-3 col-xs-12"><a href="#accountInfo" aria-controls="accountInfo" role="tab" data-toggle="tab">My Account</a></li>
+						<li role="presentation" class="col-md-3 col-xs-12"><a href="#passwordRecovery" aria-controls="passwordRecovery" role="tab" data-toggle="tab">Password Recovery</a></li>
+						<li role="presentation" class="col-md-3 col-xs-12"><a href="#boardMessage" aria-controls="boardMessage" role="tab" data-toggle="tab">Board Message</a></li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -91,10 +91,20 @@
 							border-bottom: 1px solid #ddd;
 							border-right: 1px solid #ddd;
 						}
+						
+						.panel-heading{
+							padding-left: 5px;
+							padding-bottom: 0px;
+							border-bottom: 1px solid #ddd;
+							color: #2E9AFE;
+						}
 					</style>
+					
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="home">
+						<div role="tabpanel" class="tab-pane fade in active" id="accountInfo">
 							<div class="panel-body">
+								<!-- ------------------------------------ Personal Information --------------------------------- -->
+								<div class="panel-heading"><h4>Personal Information</h4></div>
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Full Name</strong></div>
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userFname ?></div>
@@ -109,14 +119,38 @@
 									<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userEmail ?></div>
 								</div>
+								
+								<!-- ------------------------------------ Contact Information --------------------------------- -->
+								<div class="clearfix"></div>
+								<div class="panel-heading"><h4>Contact Information</h4></div>
+								
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userPosition ?></div>
+								</div>
+								
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel"><strong>Office Number</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userOfficeNumber ?></div>
+								</div>
+								
+								<div class="myAccountItem">
+									<div class="col-md-2 dataBaseValueLabel"><strong>Cell Number</strong></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userCellNumber ?></div>
+								</div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="profile">
-							<div class="panel-body"></div>
-						<div role="tabpanel" class="tab-pane fade" id="messages">
-							<div class="panel-body"></div></div>
-						<div role="tabpanel" class="tab-pane fade" id="settings">
-							<div class="panel-body"></div></div>
+						
+						<div role="tabpanel" class="tab-pane fade" id="passwordRecovery">
+							<div class="panel-body">
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade" id="boardMessage">
+							<div class="panel-body">
+								
+							</div>
+						</div>
 					</div>
 					
 					<strong style="color: red;">Note:</strong> you can only view, you cannot edit any information yet.

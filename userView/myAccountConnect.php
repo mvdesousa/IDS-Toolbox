@@ -12,8 +12,14 @@
 	$userFname =  $myAccountResultsRow['name'];
 	$userName =  $myAccountResultsRow['username'];
 	$userEmail =  $myAccountResultsRow['email'];
+	$userPosition =  $myAccountResultsRow['position'];
+	$userOfficeNumber =  $myAccountResultsRow['officeNumber'];
+	$userCellNumber =  $myAccountResultsRow['cellNumber'];
 	
 	$_SESSION['userFname'] = $userFname;
 	$_SESSION['userName'] = $userName;
 	$_SESSION['userEmail'] = $userEmail;
+	$_SESSION['userPosition'] = $userPosition;
+	$_SESSION['userOfficeNumber'] = $userOfficeNumber;
+	$_SESSION['userCellNumber'] = $userCellNumber;
 ?>
