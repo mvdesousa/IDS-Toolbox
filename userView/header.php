@@ -1,7 +1,10 @@
 <?php
 	$hybris = "http://10.206.6.37:9001";
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 	
-	session_start();
 	if ( !isset($_SESSION['userIsLoggedIn'])){
 		/* echo "<h1>LoggedIn as - ",$_SESSION['userIsLoggedIn'];
 		echo "<br>";
@@ -30,7 +33,7 @@
 			exit;
 		};
 		*/
-	};
+	}
 ?>
 
 <!-- jQuery 2.1.3 -->
@@ -116,7 +119,7 @@
 		
 			<ul class="nav navbar-nav">
 				<!-- Control Sidebar Toggle Button -->
-				<li><a class="unselectable" href="/IDS-Toolbox/userView/myAccount.php"><?php session_start();  echo "Welcome, <strong>",$_SESSION['userFname'],"</strong>" ?></a></li>
+				<li><a class="unselectable" href="/IDS-Toolbox/userView/myAccount.php"><?php echo "Welcome, <strong>",$_SESSION['userFname'],"</strong>" ?></a></li>
 				<li><a href='/IDS-Toolbox/userView/logout.php'> Logout <i class="fa fa-sign-out"></i> </a></li>
 				<li><a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a></li>
 				

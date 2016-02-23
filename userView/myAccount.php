@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -170,7 +171,6 @@
 							}
 						}
 					</style>
-					
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="accountInfo">
 							<div class="panel-body">
@@ -207,16 +207,19 @@
 									<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userPosition ?></div>
 								</div>
+								<div class="clearfix"></div>
 								
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel"><strong>Office Number</strong></div>
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userOfficeNumber ?></div>
 								</div>
+								<div class="clearfix"></div>
 								
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel"><strong>Cell Number</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userCellNumber ?></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile"><?php  print $userCellNumber ?></div>
 								</div>
+								<div class="clearfix"></div>
 							</div>
 						</div>
 						
@@ -225,38 +228,7 @@
 								<p>Use the form below to change your current password.</p>
 								
 								<script>
-									// When the browser is ready...
-									  $(function() {
-										// Setup form validation on the #register-form element
-										$("#changeMyPasswordForm").validate({
-											// Specify the validation rules
-											rules: {
-												password: {
-													required: true,
-													minlength: 5
-												},newpassword: {
-													required: true,
-													minlength: 5
-												}
-											},
-											
-											// Specify the validation error messages
-											messages: {
-												password: {
-													required: "Please provide a password",
-													minlength: "Your password must be at least 5 characters long"
-												},newpassword: {
-													required: "Please provide a password",
-													minlength: "Your password must be at least 5 characters long"
-												}
-											},
-											
-											submitHandler: function(form) {
-												form.submit();
-											}
-										});
-
-									  });
+									
 								</script>
 								
 								<form class="col-xs-12 col-md-12" method="POST" id="changeMyPasswordForm" action="changeMyPassword.php">

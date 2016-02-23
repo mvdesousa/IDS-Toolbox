@@ -17,7 +17,6 @@
 	$userCellNumber =  $myAccountResultsRow['cellNumber'];
 	$userAccountType =  $myAccountResultsRow['accountType'];
 	$userPassword =  $myAccountResultsRow['password'];
-	$userNewPassword =  $myAccountResultsRow['newpassword'];
 	
 	$_SESSION['userFname'] = $userFname;
 	$_SESSION['userName'] = $userName;
@@ -27,10 +26,6 @@
 	$_SESSION['userCellNumber'] = $userCellNumber;
 	$_SESSION['userAccountType'] = $userAccountType;
 	$_SESSION['userPassword'] = $userPassword;
-	$_SESSION['userNewPassword'] = $userNewPassword;
-	
-	
-
 ?>
 
 

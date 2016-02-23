@@ -2,8 +2,10 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 	
-	
-	session_start();
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 	$connection = mysqli_connect('localhost', 'root', 'root', 'adminlte');
 	
 	$newUsername = $_POST['register_username'];
@@ -48,7 +50,11 @@
 		echo '$salt -> '.$salt;
 		echo "<br/><br/>";
 		
+		//creates account with no phone numbers
 		$sql = mysqli_query($connection,"INSERT INTO user (accountType, username, email, password, active, name, position, salt) VALUES ('Associate', '".$escapedName."', '".$newUserEmail."', '".$hashedPW."', '1', '".$newUserFname."', '".$newUserPosition."', '".$salt."')");
+		
+		//creates account with n/a phone numbers
+		//$sql = mysqli_query($connection,"INSERT INTO user (accountType, username, email, password, active, name, position, officeNumner, cellNumber, salt) VALUES ('Associate', '".$escapedName."', '".$newUserEmail."', '".$hashedPW."', '1', '".$newUserFname."', '".$newUserPosition."', 'n/a', 'n/a', '".$salt."')");
 		
 	};
 	
