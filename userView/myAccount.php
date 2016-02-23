@@ -79,7 +79,7 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs " role="tablist">
 						<li role="presentation" class="active col-md-3 col-xs-12"><a href="#accountInfo" aria-controls="accountInfo" role="tab" data-toggle="tab">My Account</a></li>
-						<li role="presentation" class="col-md-3 col-xs-12"><a href="#passwordRecovery" aria-controls="passwordRecovery" role="tab" data-toggle="tab">Password Recovery</a></li>
+						<li role="presentation" class="col-md-3 col-xs-12"><a href="#passwordRecovery" aria-controls="passwordRecovery" role="tab" data-toggle="tab">Password</a></li>
 						<li role="presentation" class="col-md-3 col-xs-12"><a href="#boardMessage" aria-controls="boardMessage" role="tab" data-toggle="tab">Board Message</a></li>
 					</ul>
 
@@ -98,6 +98,50 @@
 							border-bottom: 1px solid #ddd;
 							color: #2E9AFE;
 						}
+						
+						.panel-body .redTxt{
+							color: red;
+						}
+						
+						.panel-body .messageTitle{
+							font-weight: bold;
+							border-bottom: 1px solid #cecece;
+							margin-bottom: 10px;
+						}
+						
+						.panel-body .messageSection{
+							margin-bottom: 25px;
+							border: 1px solid #cecece;
+							padding: 10px;
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+							position: relative;
+							min-height: 150px;
+							/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+							background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+							background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+							background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+						}
+						
+						.panel-body .messageSection .timeStamp{
+							position: absolute;
+							top: 5px;
+							right: 10px;
+							font-weight: bold;
+						}
+						
+						.panel-body .changePasswordItem{
+							margin-bottom: 15px;
+						}
+						
+						.panel-body .changePasswordItem input{
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+							border: 1px solid #cecece;
+							padding: 5px;
+						}
 					</style>
 					
 					<div class="tab-content">
@@ -107,7 +151,7 @@
 								<!-- ------------------------------------ Account Type Information --------------------------------- -->
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Account Type</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userAccountType ?></div>
+									<div class="col-md-10 dataBaseValue activeOnMobile accountTypeValue"><?php print $userAccountType ?></div>
 								</div>
 								<div class="clearfix"></div>
 								
@@ -151,33 +195,123 @@
 						
 						<div role="tabpanel" class="tab-pane fade" id="passwordRecovery">
 							<div class="panel-body">
-								<form class="col-md-6">
-									<label>Current Password</label>
+								<p>Use the form below to change your current password.</p>
+								
+								<script>
+									// When the browser is ready...
+									  $(function() {
+										// Setup form validation on the #register-form element
+										$("#changeMyPasswordForm").validate({
+											// Specify the validation rules
+											rules: {
+												password: {
+													required: true,
+													minlength: 5
+												},newpassword: {
+													required: true,
+													minlength: 5
+												}
+											},
+											
+											// Specify the validation error messages
+											messages: {
+												password: {
+													required: "Please provide a password",
+													minlength: "Your password must be at least 5 characters long"
+												},newpassword: {
+													required: "Please provide a password",
+													minlength: "Your password must be at least 5 characters long"
+												}
+											},
+											
+											submitHandler: function(form) {
+												form.submit();
+											}
+										});
+
+									  });
+								</script>
+								
+								<form class=" col-xs-12 col-md-10" method="POST" id="changeMyPasswordForm" action="changeMyPassword.php">
+									<div class="panel-heading"><h4>Current Information</h4></div>
 									<br/>
-									<input type="password" class="col-md-12 roundThis" placeholder="&#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;"></input>
-									<div class="clearfix"></div>
+									<div class="col-md-12 changePasswordItem">
+										<div class="col-xs-12 col-md-3">Username</div>
+										<div class="col-xs-12 col-md-9 dataBaseValue activeOnMobile"><?php print $userName ?></div>
+									</div>
 									
-									<br/>
-									<br/>
-									<br/>
+									<div class="col-md-12 changePasswordItem">
+										<div class="col-xs-12 col-md-3">Enter current password:</div>
+										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="password"></div>
+									</div>
 									
-									<label>New Password</label>
-									<br/>
-									<input type="password" class="col-md-12 roundThis" placeholder="password"></input>
-									<div class="clearfix"></div>
 									
-									<label>Confirm New Password</label>
+									
+									<div class="panel-heading"><h4>New Password</h4></div>
 									<br/>
-									<input type="password" class="col-md-12 roundThis" placeholder="password"></input>
-									<div class="clearfix"></div>
+									<div class="col-md-12 changePasswordItem">
+										<div class="col-xs-12 col-md-3">Enter new password:</div>
+										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="newpassword"></div>
+									</div>
+									
+									<div class="col-md-12 changePasswordItem">
+										<div class=" col-xs-12 col-md-3">Re-enter new password:</div>
+										<div class=" col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="confirmnewpassword"></div>
+									</div>
+									
+									<p><input class="saveBtn changePasswordBtn pull-right col-md-3 col-xs-12" type="submit" value="Update Password" style="margin-right: 30px;">
 								</form>
-							
 							</div>
 						</div>
 						
 						<div role="tabpanel" class="tab-pane fade" id="boardMessage">
 							<div class="panel-body">
+								<div class="messageSection adminMessageContent">
+									<div class="timeStamp">
+										2/16/2016
+									</div>
+									
+									<div class="messageTitle">
+										<strong class="redTxt">New</strong> How to get started as a developer for the IDS-Toolbox
+									</div>
+									
+									<div class="messageContent">
+										<p>Welcome,</p>
+
+										<p>The IDS-Toolbox will be a collection of resources available for anyone who has questions or concerns on how to complete certain tasks in our website.</p>
+
+										<p>Please go to our repository at GitHub:</p>
+										<ul>
+											<li>URL: <a href="https://github.com/mvdesousa/IDS-Toolbox" title="">https://github.com/mvdesousa/IDS-Toolbox</a></li>
+										</ul>
+											
+
+										<p>If you prefer to have a GUI for GitHub you may download;</p>
+											<ul>
+												<li>SmartGit URL: 		<a href="http://www.syntevo.com/smartgit/download" title="">http://www.syntevo.com/smartgit/download</a>	(Easy Setup)</li>
+												<li>GitHub Desktop: 	<a href="https://desktop.github.com/" title="">https://desktop.github.com/</a>					(Medium Setup)</li>
+											</ul>
+											
+										<p>After getting setup with GitHub and you downloaded one of the apps above, please clone the repository <a href="https://github.com/mvdesousa/IDS-Toolbox" title="">https://github.com/mvdesousa/IDS-Toolbox</a> to a folder in your computer. It can be anywhere you want but please keep in mind that once you connect your repo to a specific folder in your desktop, you will not be able to change that path. If you move the folder elsewhere, GitHub will not know the association of that file. So please think about where you want to setup your repository and make sure to keep it that way while using GitHub on a project.</p>
+
+										<p>Thank You</p>
+									</div>
+								</div><!-- close message-->
 								
+								
+								<div class="messageSection associateMessageContent">
+									<div class="timeStamp">
+										2/22/2016
+									</div>
+								
+									<div class="messageTitle">
+										<strong class="redTxt">New</strong> WCMS Tutorials now available
+									</div>
+									
+									<div class="messageContent">
+										We have recently added <strong>How To Create a New Page in WCMS</strong>. Click <a href="pages/createNewPage-Education.php" title="">here</a> to learn more.
+									</div>
+								</div><!-- close message-->
 							</div>
 						</div>
 					</div>
@@ -187,7 +321,7 @@
 			</section>
 			
 				
-			
+			<script src="javascripts/accountType.js"></script>
 			
 		</div><!-- /.content-wrapper -->
 	</body>
