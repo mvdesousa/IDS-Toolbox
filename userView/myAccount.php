@@ -194,14 +194,14 @@
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userName ?></div>
 								</div>
 								
+								<!-- ------------------------------------ Contact Information --------------------------------- -->
+								<div class="clearfix"></div>
+								<div class="panel-heading"><h4>Contact Information</h4></div>
+								
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
 									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userEmail ?></div>
 								</div>
-								
-								<!-- ------------------------------------ Contact Information --------------------------------- -->
-								<div class="clearfix"></div>
-								<div class="panel-heading"><h4>Contact Information</h4></div>
 								
 								<div class="myAccountItem">
 									<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
@@ -241,7 +241,7 @@
 									
 									<div class="changePasswordItem">
 										<div class="col-md-3 dataBaseValueLabel unselectable">Enter current password:</div>
-										<div class="col-md-9 activeOnMobile"><input class="col-md-12" type="password" name="password"></div>
+										<div class="col-md-9 activeOnMobile"><input class="col-md-12" type="password" name="password"  data-toggle="tooltip" title="Cannot be empty" data-placement="left"></div>
 									</div>
 									
 									<div class="clearfix"></div>
@@ -249,16 +249,33 @@
 									<br/>
 									<div class="changePasswordItem">
 										<div class="col-xs-12 col-md-3">Enter new password:</div>
-										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="newpassword"></div>
+										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="newpassword"  data-toggle="tooltip" title="Cannot be empty" data-placement="left"></div>
 									</div>
 									
 									<div class="changePasswordItem">
 										<div class=" col-xs-12 col-md-3">Re-enter new password:</div>
-										<div class=" col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="confirmnewpassword"></div>
+										<div class=" col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="confirmnewpassword"  data-toggle="tooltip" title="Cannot be empty" data-placement="left"></div>
 									</div>
 									
 									<p><input class="saveBtn changePasswordBtn col-md-3 col-xs-11" type="submit" value="Update Password" style=" ">
 								</form>
+								
+								<script>
+									$(".saveBtn.changePasswordBtn").on( "click", function() {
+										var inputFields = $(".changePasswordItem input").val();
+										
+										if (inputFields == ""){
+											$("#myModalLabel").html("Empty Password Input");
+											$("#myModalBody").html("<center>Please make sure that all fields are filled out. <br/> None of the Password input fields are allowed to be empty.</center>");
+											
+											$("#myModal").modal('toggle');
+											
+											return false;
+										}else{
+											//success
+										}
+									});
+								</script>
 							</div>
 						</div>
 						

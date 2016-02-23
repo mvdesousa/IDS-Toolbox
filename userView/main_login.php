@@ -231,7 +231,7 @@
 					<hr>
 					
 					<p><label for="register_fName" class="unselectable">Full Name</label>
-					<input id="register_fName" type="text" name="register_fName" placeholder="First, Last" value=""/></p>
+					<input id="register_fName" type="text" name="register_fName" placeholder="First & Last Name" value=""/></p>
 					
 					<p><label for="register_email" class="unselectable">E-Mail Address</label>
 					<input id="register_email" type="email" name="register_email" placeholder="email@domain.com" value=""/></p>

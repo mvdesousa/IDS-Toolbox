@@ -22,6 +22,14 @@
 		echo "The username you entered does not exist";
 	}else if($password != $dataBasePassword){
 		echo "You entered an incorrect password";
+	}else if($newpassword == ""){
+		echo "You entered an empty password";
+		
+		exit;
+	}else if($confirmnewpassword == ""){
+		echo "You entered an empty confirm password";
+		
+		exit;
 	}if($newpassword == $confirmnewpassword){
 		
 		$escapedName = mysqli_real_escape_string($connection,$_SESSION['username']); # use whatever escaping function your db requires this is very important.
