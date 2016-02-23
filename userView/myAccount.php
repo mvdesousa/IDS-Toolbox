@@ -142,6 +142,33 @@
 							border: 1px solid #cecece;
 							padding: 5px;
 						}
+						
+						@media screen and (min-width: 990px){
+							.changePasswordBtn{
+								float: right;
+								margin-right: 18px;
+							}
+						}
+						
+						.panel-body .changePasswordItem div{
+							margin-bottom: 15px;
+						}
+						
+						@media screen and (max-width: 990px){
+							.changePasswordBtn{
+								clear: both;
+								margin-left: 20px;
+								margin-top: 50px;
+							}
+							
+							.changePasswordItem .dataBaseValue.activeOnMobile {
+								border: 1px solid #ccc;
+								background: #FAFAFA;
+							}
+							.changePasswordItem input{
+								width: 100%;
+							}
+						}
 					</style>
 					
 					<div class="tab-content">
@@ -232,34 +259,33 @@
 									  });
 								</script>
 								
-								<form class=" col-xs-12 col-md-10" method="POST" id="changeMyPasswordForm" action="changeMyPassword.php">
+								<form class="col-xs-12 col-md-12" method="POST" id="changeMyPasswordForm" action="changeMyPassword.php">
 									<div class="panel-heading"><h4>Current Information</h4></div>
 									<br/>
-									<div class="col-md-12 changePasswordItem">
-										<div class="col-xs-12 col-md-3">Username</div>
-										<div class="col-xs-12 col-md-9 dataBaseValue activeOnMobile"><?php print $userName ?></div>
+									<div class="changePasswordItem">
+										<div class="col-md-3 dataBaseValueLabel unselectable">Username</div>
+										<div class="col-md-9 dataBaseValue activeOnMobile"><?php print $userName ?></div>
 									</div>
 									
-									<div class="col-md-12 changePasswordItem">
-										<div class="col-xs-12 col-md-3">Enter current password:</div>
-										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="password"></div>
+									<div class="changePasswordItem">
+										<div class="col-md-3 dataBaseValueLabel unselectable">Enter current password:</div>
+										<div class="col-md-9 activeOnMobile"><input class="col-md-12" type="password" name="password"></div>
 									</div>
 									
-									
-									
+									<div class="clearfix"></div>
 									<div class="panel-heading"><h4>New Password</h4></div>
 									<br/>
-									<div class="col-md-12 changePasswordItem">
+									<div class="changePasswordItem">
 										<div class="col-xs-12 col-md-3">Enter new password:</div>
 										<div class="col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="newpassword"></div>
 									</div>
 									
-									<div class="col-md-12 changePasswordItem">
+									<div class="changePasswordItem">
 										<div class=" col-xs-12 col-md-3">Re-enter new password:</div>
 										<div class=" col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="confirmnewpassword"></div>
 									</div>
 									
-									<p><input class="saveBtn changePasswordBtn pull-right col-md-3 col-xs-12" type="submit" value="Update Password" style="margin-right: 30px;">
+									<p><input class="saveBtn changePasswordBtn col-md-3 col-xs-11" type="submit" value="Update Password" style=" ">
 								</form>
 							</div>
 						</div>
@@ -316,7 +342,7 @@
 						</div>
 					</div>
 					
-					<strong style="color: red;">Note:</strong> you can only view, you cannot edit any information yet.
+					<strong style="color: red;">Note:</strong> We do not have a password recovery yet, please <strong>remember</strong> your password. We are working on getting that functionality done.
 				</div>
 			</section>
 			

@@ -31,12 +31,12 @@
 		$salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
 
 		$saltedPW =  $escapedPW . $salt;
-			echo $saltedPW;
 		$hashedPW = hash('sha256', $saltedPW);
+			echo $hashedPW;
 
 		//$sql = mysqli_query($connection,"insert into user (username, password, salt) values ('$escapedName', '$hashedPW', '$salt'); ";
-		//$sql = mysqli_query($connection,"UPDATE user SET password='".$escapedPW."', salt='".$salt."'where username='".$username."'";
-		//$sql = mysqli_query($connection,"UPDATE user SET password='".$escapedPW."' where username='".$username."'");
+		// $sql = mysqli_query($connection,"UPDATE user SET password='".$hashedPW."', salt='".$salt."' where username='".$username."'";
+		$sql = mysqli_query($connection,"UPDATE user SET password='".$hashedPW."',salt='".$salt."' where username='".$username."'");
 		
 		
 		
@@ -49,44 +49,11 @@
 	
 	if($sql){
 		echo "Congratulations You have successfully changed your password <br/>";
-		//header( "Location: /IDS-Toolbox/userView/myAccount.php");
+		header( "Location: /IDS-Toolbox/userView/myAccount.php");
 		
 	}else{
 		echo "The new password and confirm new password fields must be the same <br/>";
 		
 	};
-	
-	
-	
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 ?>

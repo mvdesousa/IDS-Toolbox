@@ -142,12 +142,32 @@ body{
 	*:focus {
 		outline: none;
 	}
+	
+	.hidethis{
+		display: none;
+	}
+	.formGroup{
+		position: relative;
+		min-height: 250px;
+	}
+	.formGroup #logInForm{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 </style>
 
 <html>
 	<head>
 		<title>IDSToolbox - Login</title>
-		
+	
+		<!-- jQuery 2.1.3 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<!-- jQuery UI 1.11.2 -->
+		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="/IDS-Toolbox/userView/javascripts/scrollableDiv.js" type="text/javascript"></script>
+			
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -161,21 +181,69 @@ body{
 	
 	<body>
 		<div class="register-form">
-			<h1 class="unselectable"><strong>IDS</strong><small style="color: #fff;">Toolbox</small></h1>
+			<h1 class="IDSLogo unselectable"><strong>IDS</strong><small style="color: #fff;">Toolbox</small></h1>
 			<hr>
 			
-			<form class="col-md-12" action="checkLogInPage.php" method="POST">
-					<p><label for="username" class="unselectable">User Name</label>
-					<input id="username" type="text" name="username" placeholder="username" value=""/></p>
-				 
-					 <p><label for="password" class="unselectable">Password</label>
-					 <input id="password" type="password" name="password" placeholder="password" value=""/></p>
-				 
-					<a style="display: none; color: white; margin-left: 80px;" href="register.php">Signup</a>
-					<input style="width: 180px; margin-top: 15px; color: #555;" class="register myButton2" type="submit" name="submit" value="Login" />
-			</form>
+			<div class="formGroup">
+				<form id="logInForm" class="col-md-12" action="checkLogInPage.php" method="POST">
+						<p><label for="username" class="unselectable">User Name</label>
+						<input id="username" type="text" name="username" placeholder="username" value=""/></p>
+					 
+						 <p><label for="password" class="unselectable">Password</label>
+						 <input id="password" type="password" name="password" placeholder="password" value=""/></p>
+					 
+						<input style="width: 180px; margin-top: 15px; color: #555;" class="register myButton2" type="submit" name="submit" value="Login" />
+				
+						<br/><br/>
+						<div><a class="registerAccountBtn" style="color: white;" href="#createMyAccount">Create My Account</a></div>
+						
+						<div class="clearfix"></div>
+				</form>
+				<div class="clearfix"></div>
+				
+				<form id="registerForm" class="col-md-12 hidethis" action="registerAccount.php" method="POST">
+					<p><label for="register_username" class="unselectable">User Name</label>
+					<input id="register_username" type="text" name="register_username" placeholder="username" value="testuser"/></p>
+
+					<p><label for="register_password" class="unselectable">Password</label>
+					<input id="register_password" type="password" name="register_password" placeholder="password" value="password1"/></p>
+
+					<p><label for="register_cpassword" class="unselectable">Confirm Password</label>
+					<input id="register_cpassword" type="password" name="register_cpassword" placeholder="password" value="password1"/></p>
+					
+					<hr>
+					
+					<p><label for="register_fName" class="unselectable">Full Name</label>
+					<input id="register_fName" type="text" name="register_fName" placeholder="First, Last" value="my name"/></p>
+					
+					<p><label for="register_email" class="unselectable">E-Mail Address</label>
+					<input id="register_email" type="email" name="register_email" placeholder="email@domain.com" value="email@email.com"/></p>
+					
+					<p><label for="register_position" class="unselectable">Job Position</label>
+					<input id="register_position" type="text" name="register_position" placeholder="Web Developer" value="Test Developer"/></p>
+
+					<input style="width: 180px; margin-top: 15px; color: #555;" class="register myButton2" type="submit" name="submit" value="Register My Account" />
+				</form>
+				<div class="clearfix"></div>
+			</div>
 			
-			<div class="clearfix"></div>
+			<script>
+				
+				$("a.registerAccountBtn").click(function() {
+					$("#logInForm").fadeToggle();
+					$("#registerForm").fadeToggle();
+				});
+				
+				$(".IDSLogo").click(function() {
+					$("#logInForm").fadeToggle();
+					$("#registerForm").fadeToggle();
+				});
+				
+				var checkPassFn = function(){
+					var registerPassword = $(".password")
+					
+				};
+			</script>
 		</div>
 		<div class="clearfix"></div>
 	</body>
