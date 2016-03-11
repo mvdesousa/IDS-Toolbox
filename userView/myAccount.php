@@ -104,6 +104,10 @@
 							color: red;
 						}
 						
+						.dataBaseValue input{
+							display: none;
+						}
+						
 						.panel-body .messageTitle{
 							font-weight: bold;
 							border-bottom: 1px solid #cecece;
@@ -126,6 +130,20 @@
 
 						}
 						
+						.panel-body .myAccountItem .dataBaseValue{
+							position: relative;
+						}
+						
+						.panel-body .myAccountItem .dataBaseValue input{
+							position: absolute;
+							top: 0;
+							left: 0;
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+							border: 1px solid #cecece;
+							padding: 5px 20px;
+						}
+						
 						.panel-body .messageSection .timeStamp{
 							position: absolute;
 							top: 5px;
@@ -143,16 +161,15 @@
 							border: 1px solid #cecece;
 							padding: 5px;
 						}
+						.panel-body .changePasswordItem div{
+							margin-bottom: 15px;
+						}
 						
 						@media screen and (min-width: 990px){
 							.changePasswordBtn{
 								float: right;
 								margin-right: 18px;
 							}
-						}
-						
-						.panel-body .changePasswordItem div{
-							margin-bottom: 15px;
 						}
 						
 						@media screen and (max-width: 990px){
@@ -171,55 +188,93 @@
 							}
 						}
 					</style>
+					
+					<script>
+						$(function() {
+							$(".myAccountItem .dataBaseValue").click(function() {
+								$(this).parent().find("input").fadeToggle();
+								
+								$(this).parent().find(".textDataBaseValue").fadeToggle();
+							});
+						});
+					</script>
+					
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="accountInfo">
 							<div class="panel-body">
-								<!-- Data coming from myAccountConnect -->
-								<!-- ------------------------------------ Account Type Information --------------------------------- -->
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Account Type</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile accountTypeValue"><?php print $userAccountType ?></div>
-								</div>
-								<div class="clearfix"></div>
-								
-								<!-- ------------------------------------ Personal Information --------------------------------- -->
-								<div class="panel-heading"><h4>Personal Information</h4></div>
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Full Name</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userFname ?></div>
-								</div>
-								
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel"><strong>User Name</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userName ?></div>
-								</div>
-								
-								<!-- ------------------------------------ Contact Information --------------------------------- -->
-								<div class="clearfix"></div>
-								<div class="panel-heading"><h4>Contact Information</h4></div>
-								
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userEmail ?></div>
-								</div>
-								
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userPosition ?></div>
-								</div>
-								<div class="clearfix"></div>
-								
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel"><strong>Office Number</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php print $userOfficeNumber ?></div>
-								</div>
-								<div class="clearfix"></div>
-								
-								<div class="myAccountItem">
-									<div class="col-md-2 dataBaseValueLabel"><strong>Cell Number</strong></div>
-									<div class="col-md-10 dataBaseValue activeOnMobile"><?php  print $userCellNumber ?></div>
-								</div>
-								<div class="clearfix"></div>
+								<form class="col-xs-12 col-md-12" method="POST" id="changeMyAccountInfo" action="myAccountEdit.php">
+									<!-- Data coming from myAccountConnect -->
+									<!-- ------------------------------------ Account Type Information --------------------------------- -->
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Account Type</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile accountTypeValue">
+											<?php print $userAccountType ?>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									
+									<!-- ------------------------------------ Personal Information --------------------------------- -->
+									<div class="panel-heading"><h4>Personal Information</h4></div>
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Full Name</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php print $userFname ?></span>  
+											<input class="col-md-12" type="text" value="<?php print $userFname ?>" />
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel"><strong>User Name</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php print $userName ?></span>  
+											<input class="col-md-12" type="text" value="<?php print $userName ?>" />
+										</div>
+										<div class="clearfix"></div>
+									</div>
+
+									<!-- ------------------------------------ Contact Information --------------------------------- -->
+									<div class="clearfix"></div>
+									<div class="panel-heading"><h4>Contact Information</h4></div>
+									
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php print $userEmail ?></span>  
+											<input class="col-md-12" type="text" value="<?php print $userEmail ?>" />
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php print $userPosition ?></span>  
+											<input class="col-md-12" type="text" value="<?php print $userPosition ?>" />
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel"><strong>Office Number</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php print $userOfficeNumber ?></span>  
+											<input class="col-md-12" type="text" value="<?php print $userOfficeNumber ?>" />
+										</div>
+										
+										<div class="clearfix"></div>
+									</div>
+									
+									<div class="myAccountItem">
+										<div class="col-md-2 dataBaseValueLabel"><strong>Cell Number</strong></div>
+										<div class="col-md-10 dataBaseValue activeOnMobile">
+											<span class="col-md-12 textDataBaseValue"><?php  print $userCellNumber ?></span> 
+											<input class="col-md-12" type="text" value="<?php print $userCellNumber ?>" />
+										</div>
+										
+										<div class="clearfix"></div>
+									</div>
+								</form><!-- close form -->
 							</div>
 						</div>
 						
