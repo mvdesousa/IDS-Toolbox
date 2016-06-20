@@ -12,11 +12,9 @@ input.roundThis{
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 5px;
-	cursor: not-allowed;
 }
-.myAccountItem .dataBaseValue:hover{
-	border: 1px solid #ccc;
-	background: #FAFAFA;
+.myAccountItem .accountTypeValue, .myAccountItem .userNameDatabaseValue{
+	cursor: not-allowed;
 }
 
 .myAccountItem .dataBaseValueLabel{
@@ -27,7 +25,186 @@ input.roundThis{
 
 @media screen and (max-width: 990px) {
     .myAccountItem .dataBaseValue.activeOnMobile{
-		border: 1px solid #ccc;
-		background: #FAFAFA;
+		
+	}
+	
+	.myAccountItem .textDataBaseValue{
+		padding-left: 0 !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.panel-body{
+	min-height: 500px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.panel-heading{
+	padding-left: 5px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #ddd;
+	color: #2E9AFE;
+}
+
+.panel-body .redTxt{
+	color: red;
+}
+
+.dataBaseValue input{
+	display: none;
+}
+
+.panel-body .messageTitle{
+	font-weight: bold;
+	border-bottom: 1px solid #cecece;
+	margin-bottom: 10px;
+}
+
+.panel-body .messageSection{
+	margin-bottom: 25px;
+	border: 1px solid #cecece;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	min-height: 150px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.panel-body .myAccountItem{
+	min-height: 40px;
+}
+
+.panel-body .myAccountItem .dataBaseValue{
+	position: relative;
+}
+
+.panel-body .myAccountItem .dataBaseValue input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #cecece;
+	padding: 5px 20px;
+	height: 30px;
+	width: 100%;
+}
+
+.panel-body .messageSection .timeStamp{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-weight: bold;
+}
+
+.panel-body .changePasswordItem .currentPassword{
+	position: relative;
+}
+
+.panel-body .changePasswordItem .currentPassword .showPasswordBtn{
+	position: absolute;
+	top: 4px;
+	right: 3px;
+	font-size: small;
+}
+
+.panel-body .changePasswordItem{
+	margin-bottom: 15px;
+}
+
+.panel-body .changePasswordItem input{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #cecece;
+	padding: 5px;
+}
+.panel-body .changePasswordItem div{
+	margin-bottom: 15px;
+}
+
+.panel-body #changeMyAccountInfo{
+	padding-bottom: 50px;
+}
+
+.formControlBtns{
+	margin-top: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 30px;
+	
+	position: relative;
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.formControlBtns input{
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+
+
+.saveBtn.changeProfileBtn{
+	clear: both !important;
+	display: none;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.editBtn.editProfileBtn{
+	margin-right: 3px;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.changePasswordItem input{
+	width: 100%;
+}
+
+.changePasswordItem .dataBaseValue.activeOnMobile {
+	border: 1px solid #ccc;
+	background: #FAFAFA;
+}
+
+
+
+@media screen and (min-width: 990px){
+	.changePasswordBtn{
+		float: right;
+		margin-right: 18px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.changePasswordBtn{
+		clear: both;
+		margin-left: 20px;
+		margin-top: 50px;
+	}
+	
+
+	.formControlBtns input{
+		width: 100%;
 	}
 }

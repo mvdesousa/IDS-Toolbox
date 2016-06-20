@@ -95,6 +95,21 @@
 		position:relative;
 		top:1px;
 	}
+	
+	
+	.editBtn{
+		font-family:Arial;
+		font-size:13px;
+		font-weight:bold;
+		padding:6px 12px;
+		text-decoration:none;
+	}
+	
+	
+
+	.noPadding{
+		padding: 0 !important;
+	}
 </style>
 
 <!-- Main Header -->

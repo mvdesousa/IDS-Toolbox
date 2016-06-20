@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 
+<?php 
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+?>
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -85,131 +91,15 @@
 					</ul>
 
 					<!-- Tab panes -->
-					<style>
-						.panel-body{
-							min-height: 500px;
-							border-left: 1px solid #ddd;
-							border-bottom: 1px solid #ddd;
-							border-right: 1px solid #ddd;
-						}
-						
-						.panel-heading{
-							padding-left: 5px;
-							padding-bottom: 0px;
-							border-bottom: 1px solid #ddd;
-							color: #2E9AFE;
-						}
-						
-						.panel-body .redTxt{
-							color: red;
-						}
-						
-						.dataBaseValue input{
-							display: none;
-						}
-						
-						.panel-body .messageTitle{
-							font-weight: bold;
-							border-bottom: 1px solid #cecece;
-							margin-bottom: 10px;
-						}
-						
-						.panel-body .messageSection{
-							margin-bottom: 25px;
-							border: 1px solid #cecece;
-							padding: 10px;
-							-webkit-border-radius: 5px;
-							border-radius: 5px;
-							position: relative;
-							min-height: 150px;
-							/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-							background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-							background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-							background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-						}
-						
-						.panel-body .myAccountItem .dataBaseValue{
-							position: relative;
-						}
-						
-						.panel-body .myAccountItem .dataBaseValue input{
-							position: absolute;
-							top: 0;
-							left: 0;
-							-webkit-border-radius: 5px;
-							border-radius: 5px;
-							border: 1px solid #cecece;
-							padding: 5px 20px;
-						}
-						
-						.panel-body .messageSection .timeStamp{
-							position: absolute;
-							top: 5px;
-							right: 10px;
-							font-weight: bold;
-						}
-						
-						.panel-body .changePasswordItem{
-							margin-bottom: 15px;
-						}
-						
-						.panel-body .changePasswordItem input{
-							-webkit-border-radius: 5px;
-							border-radius: 5px;
-							border: 1px solid #cecece;
-							padding: 5px;
-						}
-						.panel-body .changePasswordItem div{
-							margin-bottom: 15px;
-						}
-						
-						@media screen and (min-width: 990px){
-							.changePasswordBtn{
-								float: right;
-								margin-right: 18px;
-							}
-						}
-						
-						@media screen and (max-width: 990px){
-							.changePasswordBtn{
-								clear: both;
-								margin-left: 20px;
-								margin-top: 50px;
-							}
-							
-							.changePasswordItem .dataBaseValue.activeOnMobile {
-								border: 1px solid #ccc;
-								background: #FAFAFA;
-							}
-							.changePasswordItem input{
-								width: 100%;
-							}
-						}
-					</style>
-					
-					<script>
-						$(function() {
-							$(".myAccountItem .dataBaseValue").click(function() {
-								$(this).parent().find("input").fadeToggle();
-								
-								$(this).parent().find(".textDataBaseValue").fadeToggle();
-							});
-						});
-					</script>
-					
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="accountInfo">
 							<div class="panel-body">
-								<form class="col-xs-12 col-md-12" method="POST" id="changeMyAccountInfo" action="myAccountEdit.php">
+								<form class="col-xs-12 col-md-12" method="POST" id="changeMyAccountInfo" action="myAccountUpdateConnect.php">
 									<!-- Data coming from myAccountConnect -->
 									<!-- ------------------------------------ Account Type Information --------------------------------- -->
 									<div class="myAccountItem">
-										<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Account Type</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile accountTypeValue">
-											<?php print $userAccountType ?>
-										</div>
+										<div class="col-md-2" style="padding-left: 5px"><strong>Account Type</strong></div>
+										<div class="accountTypeValue col-md-10"><span style="margin-left: 5px"><?php print $userAccountType ?></span></div>
 									</div>
 									<div class="clearfix"></div>
 									
@@ -217,18 +107,17 @@
 									<div class="panel-heading"><h4>Personal Information</h4></div>
 									<div class="myAccountItem">
 										<div class="col-md-2 dataBaseValueLabel unselectable"><strong>Full Name</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
+										<div class="col-md-10 userFnameDatabseValue dataBaseValue activeOnMobile">
 											<span class="col-md-12 textDataBaseValue"><?php print $userFname ?></span>  
-											<input class="col-md-12" type="text" value="<?php print $userFname ?>" />
+											<input class="col-md-12" name="userFullNameVal" type="text" value="<?php print $userFname ?>" />
 										</div>
 										<div class="clearfix"></div>
 									</div>
 									
 									<div class="myAccountItem">
 										<div class="col-md-2 dataBaseValueLabel"><strong>User Name</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
-											<span class="col-md-12 textDataBaseValue"><?php print $userName ?></span>  
-											<input class="col-md-12" type="text" value="<?php print $userName ?>" />
+										<div class="col-md-10">
+											<span class="userNameDatabaseValue textDataBaseValue" style="padding-left: 6px;"><?php print $userName ?></span>  
 										</div>
 										<div class="clearfix"></div>
 									</div>
@@ -239,27 +128,27 @@
 									
 									<div class="myAccountItem">
 										<div class="col-md-2 dataBaseValueLabel"><strong>E-Mail Address</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
+										<div class="col-md-10 userEmailDatabseValue dataBaseValue activeOnMobile">
 											<span class="col-md-12 textDataBaseValue"><?php print $userEmail ?></span>  
-											<input class="col-md-12" type="text" value="<?php print $userEmail ?>" />
+											<input class="col-md-12" name="userEmailAddressVal" type="text" value="<?php print $userEmail ?>" />
 										</div>
 										<div class="clearfix"></div>
 									</div>
 									
 									<div class="myAccountItem">
-										<div class="col-md-2 dataBaseValueLabel"><strong>Position</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
+										<div class="col-md-2 dataBaseValueLabel"><strong>Job Title</strong></div>
+										<div class="col-md-10 userJobTileDatabseValue dataBaseValue activeOnMobile">
 											<span class="col-md-12 textDataBaseValue"><?php print $userPosition ?></span>  
-											<input class="col-md-12" type="text" value="<?php print $userPosition ?>" />
+											<input class="col-md-12" name="userJobTitleVal" type="text" value="<?php print $userPosition ?>" />
 										</div>
 										<div class="clearfix"></div>
 									</div>
 									
 									<div class="myAccountItem">
 										<div class="col-md-2 dataBaseValueLabel"><strong>Office Number</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
+										<div class="col-md-10 userOfficeNumberDatabseValue dataBaseValue activeOnMobile">
 											<span class="col-md-12 textDataBaseValue"><?php print $userOfficeNumber ?></span>  
-											<input class="col-md-12" type="text" value="<?php print $userOfficeNumber ?>" />
+											<input class="col-md-12" name="userOfficeNumberVal" type="text" value="<?php print $userOfficeNumber ?>" />
 										</div>
 										
 										<div class="clearfix"></div>
@@ -267,12 +156,18 @@
 									
 									<div class="myAccountItem">
 										<div class="col-md-2 dataBaseValueLabel"><strong>Cell Number</strong></div>
-										<div class="col-md-10 dataBaseValue activeOnMobile">
+										<div class="col-md-10 userCellNumberDatabseValue dataBaseValue activeOnMobile">
 											<span class="col-md-12 textDataBaseValue"><?php  print $userCellNumber ?></span> 
-											<input class="col-md-12" type="text" value="<?php print $userCellNumber ?>" />
+											<input class="col-md-12" name="userCellNumberVal" type="text" value="<?php print $userCellNumber ?>" />
 										</div>
 										
 										<div class="clearfix"></div>
+									</div>
+									
+									<div class="clearfix"></div>
+									<div class="col-xs-12 formControlBtns">
+										<input class="saveBtn changeProfileBtn col-md-3 col-xs-11" type="submit" value="Update Profile">
+										<input class="editBtn editProfileBtn col-md-3 col-xs-11" type="submit" value="Edit Profile">
 									</div>
 								</form><!-- close form -->
 							</div>
@@ -282,21 +177,22 @@
 							<div class="panel-body">
 								<p>Use the form below to change your current password.</p>
 								
-								<script>
-									
-								</script>
-								
 								<form class="col-xs-12 col-md-12" method="POST" id="changeMyPasswordForm" action="changeMyPassword.php">
 									<div class="panel-heading"><h4>Current Information</h4></div>
 									<br/>
 									<div class="changePasswordItem">
 										<div class="col-md-3 dataBaseValueLabel unselectable">Username</div>
-										<div class="col-md-9 dataBaseValue activeOnMobile"><?php print $userName ?></div>
+										<div class="col-md-9"><?php print $userName ?></div>
 									</div>
 									
 									<div class="changePasswordItem">
 										<div class="col-md-3 dataBaseValueLabel unselectable">Enter current password:</div>
-										<div class="col-md-9 activeOnMobile"><input class="col-md-12" type="password" name="password"  data-toggle="tooltip" title="Cannot be empty" data-placement="left"></div>
+										<div class="col-md-9 currentPassword activeOnMobile">
+											<input class="col-md-12" type="password" name="password"  data-toggle="tooltip" title="Cannot be empty" data-placement="left">
+											
+										
+											<button class="showPasswordBtn pull-right" style="margin-right: 15px;">show password</button>
+										</div>
 									</div>
 									
 									<div class="clearfix"></div>
@@ -312,10 +208,18 @@
 										<div class=" col-xs-12 col-md-9"><input class="col-md-12" type="password" size="10" name="confirmnewpassword"  data-toggle="tooltip" title="Cannot be empty" data-placement="left"></div>
 									</div>
 									
-									<p><input class="saveBtn changePasswordBtn col-md-3 col-xs-11" type="submit" value="Update Password" style=" ">
+									<input class="saveBtn changePasswordBtn col-md-3 col-xs-11" type="submit" value="Update Password" style=" ">
 								</form>
 								
 								<script>
+									var	userFnameDatabseVar = "",
+										userEmailAddressVar = "",
+										userJobTitlePositionVar = "",
+										userOfficeNumberVar = "",
+										userCellNumberVar = "";
+								
+									//This button will trigger if the input fields are empty, and it will trigger the overlay
+									//error message to the user, notifying them that they must fill in the required fields.
 									$(".saveBtn.changePasswordBtn").on( "click", function() {
 										var inputFields = $(".changePasswordItem input").val();
 										
@@ -330,6 +234,103 @@
 											//success
 										}
 									});
+									
+									
+									
+									//This toggles all of the input fields vs. the visible user data text fields.
+									var toggleSaveEditAcctBtn = function(){
+										//$(".myAccountItem .dataBaseValue span").fadeToggle();
+										$(".myAccountItem .dataBaseValue input").fadeToggle();
+										
+										$("input.changeProfileBtn").fadeToggle()
+										$("input.editProfileBtn").fadeToggle();
+									};
+									$(".editBtn.editProfileBtn").click(function( event ) {
+										event.preventDefault();
+										
+										toggleSaveEditAcctBtn();
+									});	
+									$(".saveBtn.changeProfileBtn").on("click", function(){
+										$( "#changeMyAccountInfo" ).submit();
+										toggleSaveEditAcctBtn();
+									});
+									
+									
+									
+									//Button allows you to view the password input field as type=text instead of type=password
+									//allowing you to view the password thats being entered.
+									$(".showPasswordBtn").click(function( event ) {
+										event.preventDefault();
+										
+										$(".currentPassword input").attr("type","text");
+									});
+									
+									
+									
+									//This will set the password type back to  type=password, which will then stop users from
+									//viewing their password thats being entered.
+									$(".currentPassword input").focusout(function(){
+										$(".currentPassword input").attr("type","password");
+									});
+									
+									$(".currentPassword input").blur(function() {
+										$(".currentPassword input").attr("type","password");
+									});
+									
+									$(".currentPassword input").mouseout(function() {
+										$(".currentPassword input").attr("type","password");
+									});
+									
+									
+									
+									
+									var checkAccountUpdateFields = function(){
+										var	userFnameDatabseVar = $(".userFnameDatabseValue input").val(),
+											userEmailAddressVar = $(".userEmailDatabseValue input").val(),
+											userJobTitlePositionVar = $(".userJobTileDatabseValue input").val(),
+											userOfficeNumberVar = $(".userOfficeNumberDatabseValue input").val(),
+											userCellNumberVar = $(".userCellNumberDatabseValue input").val();
+											
+										var	currentUserFnameDatabseVar = $(".userFnameDatabseValue span.textDataBaseValue").text(),
+											currentEmailAddressVar = $(".userEmailDatabseValue span.textDataBaseValue").text(),
+											currentJobTitlePositionVar = $(".userJobTileDatabseValue span.textDataBaseValue").text(),
+											currentOfficeNumberVar = $(".userOfficeNumberDatabseValue span.textDataBaseValue").text(),
+											currentCellNumberVar = $(".userCellNumberDatabseValue span.textDataBaseValue").text();
+											
+											
+										
+										var inputFields = $(".myAccountItem input");
+										if (inputFields.val() == ""){
+											$("#myModalLabel").html("Empty Fields");
+											$("#myModalBody").html("<center>Please make sure that all fields are filled out.</center>");
+											
+											$("#myModal").modal('toggle');
+											
+											
+										}/* else if(currentUserFnameDatabseVar != userFnameDatabseVar){
+											
+											$("#myModalLabel").html("Success");
+											$("#myModalBody").html("<center>Account Information Updated.</center>");
+											
+											$("#myModal").modal('toggle');
+											
+											return false;
+										}else{
+											
+										} */
+									};
+									
+									
+									//This function will save all of the updated values for my account update form into variables.
+									$(".saveBtn.changeProfileBtn").click(function( event ) {
+										
+										checkAccountUpdateFields();
+										event.preventDefault();
+									});	
+									
+									
+									
+									
 								</script>
 							</div>
 						</div>
@@ -365,6 +366,21 @@
 										<p>After getting setup with GitHub and you downloaded one of the apps above, please clone the repository <a href="https://github.com/mvdesousa/IDS-Toolbox" title="">https://github.com/mvdesousa/IDS-Toolbox</a> to a folder in your computer. It can be anywhere you want but please keep in mind that once you connect your repo to a specific folder in your desktop, you will not be able to change that path. If you move the folder elsewhere, GitHub will not know the association of that file. So please think about where you want to setup your repository and make sure to keep it that way while using GitHub on a project.</p>
 
 										<p>Thank You</p>
+									</div>
+								</div><!-- close message-->
+								
+								
+								<div class="messageSection associateMessageContent">
+									<div class="timeStamp">
+										6/01/2016
+									</div>
+								
+									<div class="messageTitle">
+										<strong class="redTxt">New</strong> Managing Owners Association Documents
+									</div>
+									
+									<div class="messageContent">
+										We have recently added a tool for managing <strong>Association Documents</strong>. Click <a href="pages/contentRequest.php" title="">here</a> to learn more.
 									</div>
 								</div><!-- close message-->
 								
